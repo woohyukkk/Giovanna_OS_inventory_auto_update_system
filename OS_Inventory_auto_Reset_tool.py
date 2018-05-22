@@ -7,6 +7,22 @@ import sys
 import mysql.connector
 from mysql.connector import errorcode
 
+def searchDB(style,color,size):
+# size1 size2 size3 size4 size5 size6 size7 size8 size9 size10 size11
+#   8     10   12    14    16    18    20
+#              14W   16W   18W   20W   22W   24W   26W   28W    30W
+#          M     L    XL    1X    2X    3X  
+#   OS  
+    qtyN=''
+    if size = '8':
+       qtyN='qty1'
+    sql = "SELECT %s FROM syql_ats WHERE code=%s and color =%s "
+    data=(qtyN,style,color)
+    cursor.execute(sql, data)
+    return
+
+
+
 ##############################Conncet DB###############################
 config = {
   'user': 'Chen He',
@@ -26,7 +42,7 @@ except mysql.connector.Error as err:
   else:
     print(err)
 
-  cnx.close()
+  #cnx.close()
 
 
 ##############################Conncet DB###############################
@@ -61,7 +77,8 @@ for item in look:
        size =SKU[2]
     else:
        size='N/A'
-    print ("Style:"+style+"     Color:"+color+"     Size:"+size)
-
+    print ("CSV: Style:"+style+"     Color:"+color+"     Size:"+size)
+    searchDB(style,color,size)
+################################################################################    
 
 
