@@ -1,4 +1,4 @@
-#v0.1 check for ATS and Alert
+#v1.0 check for ATS and Alert
 import csv
 import smtplib
 import sys
@@ -34,6 +34,7 @@ def CheckList(ATS):
 	
 def UpdateOS(ATS):
     wcount=0
+    addCount=0
     fo= open('output.csv',"w",newline='') 
     fieldnames=['Supplier Sku','Quantity','Warehouse Name']	
     writer=csv.DictWriter(fo,fieldnames=fieldnames)
@@ -44,6 +45,7 @@ def UpdateOS(ATS):
         osCode=item[0]
         code=item[1]
         color=item[2]
+        color2=item[3]
         size= item[0]
         n=size.find('-', 8)
         size=size[n+1:len(size)]
@@ -52,11 +54,21 @@ def UpdateOS(ATS):
            continue
         if (code[0]=='H'):     #is hat
            name=code+"-"+color+"-"+"OS"
+           name2=''
         else:
            name=code+"-"+color+"-"+size
+           name2=code+"-"+color2+"-"+size
         if name in ATS:
               num=ATS[name]
               num=int(num)
+              if '#'in name2:
+                if name2 in ATS:
+                  num2=ATS[name2]
+                  num2=int(num2) 
+                  print ('*'+name+" + "+color2+"----->" ,num, " + " ,num2)
+                  num=num+num2
+                else:
+                  print (name2+" does not exist!")
               v=0
               if num>0 and num<3:
                  v=1
@@ -64,14 +76,15 @@ def UpdateOS(ATS):
                  v=2
               elif (num > 10):
                  v=3
-              print (name+": "+ATS[name]+"----->"+str(v))
+              print (name+": ",num,"----->"+str(v))
               wcount+=1
+              addCount=addCount+v
               writer.writerow({'Supplier Sku':osCode, 'Quantity':v,'Warehouse Name':'Waitex' })
         else:
            print (name+" does not exist!")
     f.close()
     fo.close()
-    print ("Total wrote: ",wcount)
+    print ("Total wrote:",wcount,",and",addCount,"items added.")
     return   
    
 f= open('ATS.csv',"r")  
