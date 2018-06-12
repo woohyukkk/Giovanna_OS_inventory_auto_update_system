@@ -24,7 +24,7 @@ def loadEmails():
       customerCode=(item[72])
       #print ("Customer: "+customerName+" Code: "+customerCode+" email: "+email)
       #cus=Customer(customerName,customerCode,email)
-      emails[customerName]=email
+      emails[customerCode]=email
       #cus.displayCustomer()
 
 	
@@ -84,14 +84,15 @@ for item in look:
     processCode=(item[0])
     invoiceNO=(item[2])
     customerName=(item[11])
+    customerCode=(item[8])
     result=(item[1])
     filename=("Inv# "+invoiceNO+" "+customerName+".pdf")
     if processCode!='E':
        continue
     try:
-        email=emails[customerName]
+        email=emails[customerCode]
     except Exception:
-        print ("ERROR: Inv# "+invoiceNO+" Can't find customerName["+ customerName +"] in emails.")
+        print ("ERROR: Inv# "+invoiceNO+" Can't find customerCode["+ customerCode +"] in emails.")
         continue
     result=(item[1])
     if (filename=='N/A')or(filename=='')or(result=='E'):
@@ -100,7 +101,7 @@ for item in look:
        e=e+1
        continue
     sendEmail(filename,email)	
-    print (n+1,' sending....'+filename+'.pdf'+"----->"+email)
+    #print (n+1,' sending....'+filename+'.pdf'+"----->"+email)
     n=n+1
 	
 print ("Emails Sent: ", n," No Email Address: ",e," Total Processed: ",n+e)
