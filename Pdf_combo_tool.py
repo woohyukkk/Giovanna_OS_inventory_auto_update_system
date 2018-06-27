@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import os
 import csv
 import smtplib
@@ -10,12 +11,19 @@ for filename in os.listdir("."):
         l=len(filename) - 6
         print (filename[0:l]+"   +++++++++++   "+filename)
         output = PdfFileWriter()
-        f1=open(filename[0:l]+".pdf", "rb")
+        try:
+          f1=open(filename[0:l]+".pdf", "rb")
+        except Exception:
+          print ("ERROR: cant find file: "+filename[0:l]+".pdf")
         f2=open(filename, "rb")
         input1 = PdfFileReader(f1)
         input2 = PdfFileReader(f2)
-        output.addPage(input1.getPage(0))
-        output.addPage(input2.getPage(0))
+        page1=input1.getNumPages()
+        page2=input2.getNumPages()
+        for i in range (page1):
+          output.addPage(input1.getPage(i))
+        for i in range (page2):
+          output.addPage(input2.getPage(i))
         outputStream = open("New"+".pdf", "wb")
         output.write(outputStream)
         outputStream.close()

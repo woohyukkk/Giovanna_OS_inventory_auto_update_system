@@ -35,6 +35,8 @@ def CheckList(ATS):
 def UpdateOS(ATS):
     wcount=0
     addCount=0
+    skip=0
+    noMatch=0
     fo= open('output.csv',"w",newline='') 
     fieldnames=['Supplier Sku','Quantity','Warehouse Name']	
     writer=csv.DictWriter(fo,fieldnames=fieldnames)
@@ -50,7 +52,12 @@ def UpdateOS(ATS):
         n=size.find('-', 8)
         size=size[n+1:len(size)]
 		
-        if code=='WINFA CODE' or code=='':
+        if code=='WINFA CODE':
+           continue
+        elif code=='':
+           print (osCode+" skiped: 0 -----> 0")
+           skip+=1
+           writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex' })
            continue
         if (code[0]=='H'):     #is hat
            name=code+"-"+color+"-"+"OS"
@@ -60,6 +67,8 @@ def UpdateOS(ATS):
            name2=code+"-"+color2+"-"+size
         if ('0'+name)in ATS:
            name='0'+name
+        if ('0'+name2)in ATS:
+           name2='0'+name2
         if name in ATS:
               num=ATS[name]
               num=int(num)
@@ -83,17 +92,19 @@ def UpdateOS(ATS):
               addCount=addCount+v
               writer.writerow({'Supplier Sku':osCode, 'Quantity':v,'Warehouse Name':'Waitex' })
         else:
-           print (name+" does not exist!")
+           print (osCode+" cant find in ATS: 0 -----> 0")
+           noMatch+=1
+           writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex' })
     f.close()
     fo.close()
-    print ("Total wrote:",wcount,",and",addCount,"items added.")
+    print ("Total wrote:",wcount,"skipped:",skip,"Ats no match:",noMatch, "and",addCount,"items added.\n\n")
     return  
 
 def UpdateJCP(ATS):
     wcount=0
     addCount=0
     fo= open('output_JCP.csv',"w",newline='') 
-    fieldnames=['Supplier Sku','Quantity','Decription','SKU']	
+    fieldnames=['IN','Supplier Sku','YES','Quantity','Blank','Blank','Blank','Blank','Decription','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','SKU','JCPENNEY']	
     writer=csv.DictWriter(fo,fieldnames=fieldnames)
     writer.writeheader()
     f= open('JCP_checkList.csv',"r")  
@@ -120,6 +131,8 @@ def UpdateJCP(ATS):
               name2=code+"-"+color2+"-"+size
         if ('0'+name)in ATS:
               name='0'+name
+        if ('0'+name2)in ATS:
+              name2='0'+name2
         if name in ATS:
               num=ATS[name]
               num=int(num)
@@ -141,41 +154,62 @@ def UpdateJCP(ATS):
               print (name+": ",num,"----->"+str(v))
               wcount+=1
               addCount=addCount+v
-              writer.writerow({'Supplier Sku':jcpCode, 'Quantity':v,'Decription':dec,'SKU':SKU })
+              writer.writerow({'IN':'IN','Supplier Sku':jcpCode,'YES':'Yes','Quantity':v,'Decription':dec,'SKU':SKU,'JCPENNEY':'JCPENNEY' })
         else:
            print (name+" does not exist!!")
-           writer.writerow({'Supplier Sku':jcpCode, 'Quantity':'0','Decription':dec,'SKU':SKU })
+           writer.writerow({'IN':'IN','Supplier Sku':jcpCode,'YES':'Yes','Quantity':'0','Decription':dec,'SKU':SKU,'JCPENNEY':'JCPENNEY' })
     f.close()
     fo.close()
-    print ("Total wrote:",wcount,",and",addCount,"items added.")
+    print ("Total wrote:",wcount, "and",addCount,"items added.\n\n")
     return  
 
-def newATSscaner(ATS0):
-    f= open('checkList.csv',"r")  
-    look=csv.reader(f)
-    for item in look:
-        osCode=item[0]
-        code=item[1]
-        color=item[2]
-        size= item[0]
-        n=size.find('-', 8)
-        size=size[n+1:len(size)]
-        m=osCode.find('-', 1)
-        osCode=osCode[0:m]
-        if code=='WINFA CODE' or code=='':
-           continue
-        print (code,osCode,osCode[1:len(osCode)+1]+" "+str(osCode in ATS0),str(osCode[2:len(osCode)] in ATS0))
-        if ((osCode in ATS0) or (osCode[1:len(osCode)+1] in ATS0))and (code==''):     #is hat
-           print ('Need Check:',osCode)
-        
-    f.close()
+def shopify_import(ATS0):
+    wcount=0
+    addCount=0
+    wrote={}
+    collect=''
+    checkList=['0710','0823','G1055','G1056','D1339','D1343','D1499']#['G0844','0650','G1060']
+    fo= open('product_template.csv',"w",newline='') 
+    fieldnames=['Handle','Title','Body (HTML)','Vendor','Type','Tags','Published','Option1 Name','Option1 Value','Option2 Name','Option2 Value','Option3 Name','Option3 Value','Variant SKU','Variant Grams','Variant Inventory Tracker','Variant Inventory Qty','Variant Inventory Policy','Variant Fulfillment Service','Variant Price','Variant Compare At Price','Variant Requires Shipping','Variant Taxable','Variant Barcode','Image Src','Image Alt Text','Gift Card','Google Shopping / MPN','Google Shopping / Age Group','Google Shopping / Gender','Google Shopping / Google Product Category','SEO Title,SEO Description','Google Shopping / AdWords Grouping','Google Shopping / AdWords Labels','Google Shopping / Condition','Google Shopping / Custom Product','Google Shopping / Custom Label 0','Google Shopping / Custom Label 1','Google Shopping / Custom Label 2','Google Shopping / Custom Label 3','Google Shopping / Custom Label 4','Variant Image','Variant Weight Unit']	
+    writer=csv.DictWriter(fo,fieldnames=fieldnames)
+    writer.writeheader()
+    print ('shopify import start',checkList)
+    for list in ATS0: #list: color,size,qty,cate
+       print (list)
+       style=list[0]
+       color=list[1]
+       size=list[2]
+       qty=list[3]
+       cate=list[4]
+       if style[0]=='G':
+          collection='GIOVANNA COLLECTION'
+       else:
+          collection='GIOVANNA SIGNATURE'
+       for item in checkList:
+          if item==style or item+'W'==style:
+             if item+'W'==style:
+                title=item
+             else:
+                title=style
+             if item not in wrote:
+                if len(style)<=3:
+                   style = '0'+style
+                print ('Loading parent',style,color,size)
+                wrote[item]=1
+                writer.writerow({'Handle':title,'Title':title,'Vendor':'GIOVANNA APPAREL','Type':cate,'Tags':collection,'Published':'TRUE','Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style+'-'+color+'-'+size,'Variant Inventory Tracker':'shopify','Variant Inventory Qty':'0','Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE','Gift Card':'FALSE','Google Shopping / Age Group':'Adult','Google Shopping / Gender':'Female','Google Shopping / Google Product Category':'Apparel & Accessories > Clothing','Google Shopping / AdWords Grouping':'Women suits', 'Google Shopping / Condition':'new','Google Shopping / Custom Product':'FALSE','Variant Weight Unit':'lb'})
+             else:
+                print ('Loading child',style,color,size)
+                writer.writerow({'Handle':title,'Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style+'-'+color+'-'+size,'Variant Inventory Tracker':'shopify','Variant Inventory Qty':'0','Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE'})
+
+    
+
     return
    
 f= open('ATS.csv',"r")  
 look=csv.reader(f)
 ATS={}
-ATS0={}
-
+ATS0=[]
+negativeList={}
 sf=0
 for item in look:
     size=[]
@@ -184,6 +218,8 @@ for item in look:
     if style == 'code':
        continue
     color=(item[1])
+    cate=item[6]
+    des=item[2]
     size.append(item[21])
     size.append(item[22])
     size.append(item[23])
@@ -218,15 +254,29 @@ for item in look:
       if size[i]!='':
         key = style+"-"+color+"-"+size[i]
         Qty = qty[i]
-        print(key+" = "+Qty)
-        ATS0[style]=Qty
+        print("ATS: "+key+" <= "+Qty)
+        if int(Qty)<0:
+           negativeList[key]=Qty
+        Alist=[]
+        Alist.append(style)
+        Alist.append(color)
+        Alist.append(size[i])
+        Alist.append(qty[i])
+        Alist.append(cate)
+        ATS0.append(Alist)
         ATS[key]=Qty
         count+=1
       else:
         continue
 	   
-print (ATS,count)
+print (ATS0,count)  
 UpdateOS(ATS)
 UpdateJCP(ATS)
-#newATSscaner(ATS0)
+#shopify_import(ATS0)
+if len(negativeList)>0:
+  print ("############################################## Negative List Report ##################################################")
+  for item,v in negativeList.items():
+    print (item,": ",v)
+else:
+  print ('No neganative item')
 f.close()
