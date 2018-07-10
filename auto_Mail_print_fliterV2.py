@@ -1,10 +1,18 @@
 import csv
 import smtplib
 import sys
+from datetime import datetime
+from datetime import timedelta
+import pandas as pd
+today=datetime.now().strftime('%Y%m%d')
+dateTest=datetime.now()-timedelta(days=5)
+dateTest=dateTest.strftime('%Y%m%d')
+dateTest=str(dateTest)
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 emails={}
 emails2={}
+Mlist={}
 def loadEmails():
    f= open('cusAction.csv',"r")  
    look=csv.reader(f)
@@ -19,8 +27,6 @@ def loadEmails():
       #cus=Customer(customerName,customerCode,email)
       emails[customerCode]=[action,email]
       #cus.displayCustomer()
-
-	
       #print (emails)
    f.close()
    return
@@ -36,11 +42,51 @@ def loadEmails2():
       #cus=Customer(customerName,customerCode,email)
       emails2[customerCode]=email
       #cus.displayCustomer()
-
-	
       #print (emails)
    f.close()
    return
+
+def mailCheck():
+  s=''
+  rtn=[]
+  n=0
+  f= open('./Invoice Reports.csv',"r")  
+  look=csv.reader(f)
+  for item in look:
+    code=item[4]
+    d=item[0]
+    cus=item[2]
+    t=dateTest
+    if d < t :
+       continue
+    if code=='M':
+       if cus not in Mlist:
+         newlist=[]
+         newlist.append(item[1])
+         Mlist[cus]=newlist
+       else:
+         Mlist[cus].append(item[1])
+       s=s+'invoiceno ='+item[1]+' or '
+       n+=1
+  rtn.append(n)
+  rtn.append(s)
+  return rtn
+
+def mailConfirm(Mlist): #pandas used
+  n=0
+  f= pd.read_csv('./Invoice Reports.csv')  
+  for code,list in Mlist.items():
+    for inv in list:
+      n+=1
+      f.loc[f["Inv#"]==inv,"Result"]='M'
+      f.to_csv('./Invoice Reports.csv', index=False)
+      print ('Inv#',inv,"Result=>",'M')
+  print ('Total',n,'processed.')
+  return
+
+  
+  
+  
 loadEmails2()  
 loadEmails()
 mode = input("Search for :") 
@@ -53,34 +99,19 @@ result = {}
 result2= {}
 
 mail_check='0'
+if mode=='M':
+       list=mailCheck()
+       n=list[0]
+       name=list[1]
 for item in look:
     cusCode=item[2]
     CODcheck=(item[12])
     if CODcheck[0:2]=='COD':
       print ( cusCode,"need COD")
       continue
-    if mode=='M':
-      try:
-         mail_check=emails[cusCode][0]
-      except Exception:
-         print ("ERROR:",cusCode,"cant find")
-         continue
-      inv=(item[0])
-      if(mail_check==mode):
-         print (cusCode,"need",mode)
-         name = name + 'invoiceno ='+inv+' or '
-         if cusCode not in result:
-          list=[]
-          list.append(inv)
-          result[cusCode]=list
-         else:
-          list=result[cusCode]
-          list.append(inv)
-          result[cusCode]=list
-         n=n+1
-    elif mode=='E':
+    if mode=='E':
        if cusCode in emails:
-          if emails[cusCode][0]=='N' or emails[cusCode][0]=='M':
+          if emails[cusCode][0]=='N' or emails[cusCode][0]=='M'or emails[cusCode][0]=='F':
             continue
        if cusCode in emails2:
          if (emails2[cusCode]!=''):
@@ -90,8 +121,26 @@ for item in look:
 	   
 	   
 print (name)
-for code,list in result.items():
+for code,list in Mlist.items():
   print(code,list)
 
-print ("Total "+mode+": ",n)	   
+print ("Total "+mode+": ",n)
 f.close()
+inp=''
+while (inp!='N' or input!='n')and(mode=='M'):
+   inp=input("Confirme Mail(Y/N): ")
+   if inp=='Y' or inp=='y':
+     print ('Mails confirming.....')
+     try:
+      mailConfirm(Mlist)
+     except Exception:
+      print ('Mail confimation failed, Pls close save file and try again...')
+      continue
+     break
+   else:
+     print('Exiting mail confirmation')
+     break
+   print ('All mails mailed')
+input('any to exit')
+
+
