@@ -14,7 +14,7 @@ n=0
 e=0
 ####################################login in eamil
 email_user = 'info@giovanna-apparel.com'
-email_password = '20171006Newpw'
+email_password = '***********'
 body = 'Dear customer,\n\nPlease see attached invoice for your reference. \n\nWe appreciate your business!\n\nGiovanna Apparel Corp. \n214 West 39th Street, Suite# 607\nNew York, NY 10018\nTel: 212-382-2500\nFax: 212-382-2553'
 # 定义函数
 emails={}
