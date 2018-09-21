@@ -1,58 +1,65 @@
-from xml.dom.minidom import parse
-import xml.dom.minidom
 import csv
-import sys
 
+mode='0'
 
-f= open('ATS.csv',"r")  
+def searchURL(style0,color0): #ATS style color
+   f=open(mode+'_ATS_URL.csv')
+   look=csv.reader(f)
+   for item in look:
+      style=item[0]
+      color=item[1]
+      url=item[4]
+      index=item[5]
+      if (style==style0 or style==style0+'W') and color==color0 and (index =='0' or index=='1'):
+        return url
+   return 'NO URL'
+
+f=open('input.csv')
 look=csv.reader(f)
-ATSlist=set()
-Weblist=set()
 
+collection={}
 for item in look:
-    style=(item[0])
-    if style == 'code':
-      continue
-    ATSlist.add(style)
+  style=item[0]
+  if mode=='0' and style[0]!='0':
+    style='0'+style
+  if style=='Handle':
+    continue
+  color=item[8]
+  name=style+'-'+color
+  if name not in collection:
+    url = searchURL(style,color)
+    collection[name]=url
+    print (name, url)
+f.close()
+f=open('input.csv')
+look=csv.reader(f)
+for item in look:
+  style=item[0]
+  if mode=='0' and style[0]!='0':
+    style='0'+style
+  if style=='Handle':
+    continue
+  color=item[8]
+  name=style+'-'+color
+  if item[1]!='':
+    del collection[name]
+    print ('removing.....',name)
 
+for item in collection:
+  print (item)
+  
+fo= open(mode+'_product_template_extra.csv',"w",newline='') 
+fieldnames=['Handle','Title','Body (HTML)','Vendor','Type','Tags','Published','Option1 Name','Option1 Value','Option2 Name','Option2 Value','Option3 Name','Option3 Value','Variant SKU','Variant Grams','Variant Inventory Tracker','Variant Inventory Qty','Variant Inventory Policy','Variant Fulfillment Service','Variant Price','Variant Compare At Price','Variant Requires Shipping','Variant Taxable','Variant Barcode','Image Src','Image Alt Text','Gift Card','Google Shopping / MPN','Google Shopping / Age Group','Google Shopping / Gender','Google Shopping / Google Product Category','SEO Title,SEO Description','Google Shopping / AdWords Grouping','Google Shopping / AdWords Labels','Google Shopping / Condition','Google Shopping / Custom Product','Google Shopping / Custom Label 0','Google Shopping / Custom Label 1','Google Shopping / Custom Label 2','Google Shopping / Custom Label 3','Google Shopping / Custom Label 4','Variant Image','Variant Weight Unit']	
+writer=csv.DictWriter(fo,fieldnames=fieldnames)
+writer.writeheader()
+for name,url in collection.items():
+  style=name
 
-print (ATSlist)
-
-# 使用minidom解析器打开 XML 文档
-DOMTree = xml.dom.minidom.parse("data.xml")
-collection = DOMTree.documentElement
-
-
-# 在集合中获取所有电影
-styles = collection.getElementsByTagName("item")
-
-notfoundN=0
-totalN=0
-# 打印每部电影的详细信息
-for style in styles:
-   #print (style)
-      #print('found style')
-      code = style.getElementsByTagName('title')[0]
-      if len(code.childNodes)>0:
-       totalN+=1
-       styleCode=code.childNodes[0].data
-       if '#'in styleCode:
-         styleCode=styleCode[1:]
-       if " " in styleCode:
-         styleCode=styleCode[0:styleCode.find(' ')]
-       if styleCode=='0711' or styleCode=='711':
-         styleCode='0711A'
-       Weblist.add(styleCode)
-      if styleCode not in ATSlist and styleCode+'W' not in ATSlist:
-        notfoundN+=1
-        print (styleCode)
-print ('Total processed:',totalN,'Not found:',notfoundN)
-
-n=0
-for item in ATSlist:
-   if 'W' in item:
-      item=item.replace('W','')
-   if item not in Weblist:
-     n+=1
-     print (item)
-print ('Total Web 0 Winfa 1:',n)
+  title=style
+  color=name[name.find('-')+1:]
+  size='0'
+  cate='SUIT'
+  collection='GIOVANNA COLLECTION'
+  URLlink=url
+  print ('Loading parent',style,color,size,cate,collection,URLlink)
+  writer.writerow({'Body (HTML)':'','Variant Price':'0','Image Src':URLlink,'Handle':title,'Title':title,'Vendor':'GIOVANNA APPAREL','Type':cate,'Tags':collection,'Published':'TRUE','Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style,'Variant Inventory Tracker':'','Variant Inventory Qty':'0','Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE','Gift Card':'FALSE','Google Shopping / Age Group':'Adult','Google Shopping / Gender':'Female','Google Shopping / Google Product Category':'Apparel & Accessories > Clothing','Google Shopping / AdWords Grouping':'Women suits', 'Google Shopping / Condition':'new','Google Shopping / Custom Product':'FALSE','Variant Weight Unit':'lb'})
