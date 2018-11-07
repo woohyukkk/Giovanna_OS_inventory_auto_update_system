@@ -12,7 +12,7 @@ WaterAndInfoPath='./wm+info/'
 styleOnlyPath='./type#/'
 font1="arial.ttf"
 maskPath='./watermark.png'
-
+maskPath_HAT='./Hat watermark.png'
 def removeInfo(input_image_path,output_image_path,watermark_image_path,position):
     base_image = Image.open(input_image_path)
     watermark = Image.open(watermark_image_path)
@@ -76,7 +76,10 @@ def loadPC(data):
      PCn=item[7]
      code=item[0]
      if '1'in PCn:
-        PCn='1 pc dress'
+         if code[0]=='P':
+           PCn='1 pc skirt'
+         else:
+           PCn='1 pc dress'
         #print ('1--->PC')
      elif '2' in PCn:
         PCn='2 pc set'
@@ -100,8 +103,10 @@ PCn='not found'
 ######add watermark
 for filename in os.listdir(rawPath):
    if '.jpg'in filename or '.JPG'in filename:
-     watermark_with_photo(rawPath+filename, waterMarkPath+filename,maskPath,position=(0,0))
-
+     if filename[0]!='H':
+        watermark_with_photo(rawPath+filename, waterMarkPath+filename,maskPath,position=(0,0))
+     else:
+        watermark_with_photo(rawPath+filename, waterMarkPath+filename,maskPath_HAT,position=(0,0))
 ######add info 
 for filename in os.listdir(waterMarkPath):
    if '.jpg'in filename or '.JPG'in filename:
@@ -133,9 +138,12 @@ for filename in os.listdir(waterMarkPath):
          PCn=input('Enter PC number:')
         #print ('enter PC....1')
         #PCn='1'
-
+        print ('@',style)
         if '1'in PCn:
-         PCn='1 pc dress'
+         if style[0]=='P':
+           PCn='1 pc skirt'
+         else:
+           PCn='1 pc dress'
          #print ('1--->PC')
         elif '2' in PCn:
          PCn='2 pc set'

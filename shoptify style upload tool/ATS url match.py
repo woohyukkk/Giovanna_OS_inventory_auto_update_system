@@ -1,7 +1,7 @@
 import csv
 import os
 
-mode='D'
+mode='0'
 def colorMatch(color1,color2):# color1 for ATS color(short)
     existC=0
     color1=color1.upper()

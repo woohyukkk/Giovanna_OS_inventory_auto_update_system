@@ -1,13 +1,17 @@
-#v1.0 check for ATS and Alert
+#!/usr/bin/python
+#v3.0 check for ATS, OS JCP, OS Marketing, Shopify Online Store inventory updating
+# auto detect ATS sizeN,atsN
+
 import csv
 import smtplib
 import sys
+import pandas as pd
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 outputList=['Quantity']
 #mode = input("Search for :") 
 count=0
-
+OS_inv={}
 def CheckList(ATS):
     f= open('checkList.csv',"r")  
     look=csv.reader(f)
@@ -33,11 +37,12 @@ def CheckList(ATS):
     return
 	
 def UpdateOS(ATS):
+    print ('####################OS file updating####################')
     wcount=0
     addCount=0
     skip=0
     noMatch=0
-    fo= open('output.csv',"w",newline='') 
+    fo= open('./upload/output_OS.csv',"w",newline='') 
     fieldnames=['Supplier Sku','Quantity','Warehouse Name']	
     writer=csv.DictWriter(fo,fieldnames=fieldnames)
     writer.writeheader()
@@ -49,7 +54,7 @@ def UpdateOS(ATS):
         color=item[2]
         color2=item[3]
         size= item[0]
-        n=size.find('-', 8)
+        n=size.rfind('-',0,len(size))
         size=size[n+1:len(size)]
 		
         if code=='WINFA CODE':
@@ -81,9 +86,100 @@ def UpdateOS(ATS):
                 else:
                   print (name2+" does not exist!")
               v=0
-              if num>0 and num<3:
+              if num>=2 and num<=3:
                  v=1
-              elif (num>2 and num < 11):
+              elif (num>3 and num < 11):
+                 v=2
+              elif (num > 10):
+                 v=3
+              print (name+": ",num,"----->"+str(v))
+              wcount+=1
+              addCount=addCount+v
+              writer.writerow({'Supplier Sku':osCode, 'Quantity':v,'Warehouse Name':'Waitex' })
+              if osCode not in OS_inv:
+                   OS_inv[osCode]=v
+        else:
+           print (osCode+" cant find in ATS: 0 -----> 0",name)
+           noMatch+=1
+           writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex' })
+           if osCode not in OS_inv:
+              OS_inv[osCode]=0
+    f.close()
+    fo.close()
+    print ("OS total wrote:",wcount,"skipped:",skip,"Ats no match:",noMatch, "and",addCount,"items added.\n\n")
+    return  
+
+def UpdateShopify(ATS):
+    print ('####################SHOPIFY file updating####################')
+    f= pd.read_csv('./upload/output_Shopify.csv')
+    f["Waitex Warehouse C/O Giovanna Apparel"]='0'
+    for style,num in ATS.items():
+      v=0
+      num=int(num)
+      if num>=2 and num<=3:
+                 v=1
+      elif (num>3 and num < 11):
+                 v=2
+      elif (num > 10):
+                 v=3
+      f.loc[f["SKU"]==style,"Waitex Warehouse C/O Giovanna Apparel"]=v
+      print ('SKU',style,"V=>",v)
+    f.to_csv('./upload/output_Shopify.csv', index=False)
+    return  
+
+def UpdateOS_Market(ATS):
+    print ('####################OS file updating####################')
+    wcount=0
+    addCount=0
+    skip=0
+    noMatch=0
+    fo= open('./upload/output_OS_Market.csv',"w",newline='') 
+    fieldnames=['Supplier Sku','Quantity','Warehouse Name']	
+    writer=csv.DictWriter(fo,fieldnames=fieldnames)
+    writer.writeheader()
+    f= open('OS_Market_Checklist.csv',"r")  
+    look=csv.reader(f)
+    for item in look:
+        osCode=item[0]
+        code=item[1]
+        color=item[2]
+        color2=item[3]
+        size= item[0]
+        n=size.rfind('-',0,len(size))
+        size=size[n+1:len(size)]
+		
+        if code=='WINFA CODE':
+           continue
+        elif code=='':
+           print (osCode+" skiped: 0 -----> 0")
+           skip+=1
+           writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex Warehouse' })
+           continue
+        if (code[0]=='H'):     #is hat
+           name=code+"-"+color+"-"+"OS"
+           name2=''
+        else:
+           name=code+"-"+color+"-"+size
+           name2=code+"-"+color2+"-"+size
+        if ('0'+name)in ATS:
+           name='0'+name
+        if ('0'+name2)in ATS:
+           name2='0'+name2
+        if name in ATS:
+              num=ATS[name]
+              num=int(num)
+              if '#'in name2:
+                if name2 in ATS:
+                  num2=ATS[name2]
+                  num2=int(num2) 
+                  print ('*'+name+" + "+color2+"----->" ,num, " + " ,num2)
+                  num=num+num2
+                else:
+                  print (name2+" does not exist!")
+              v=0
+              if num>=2 and num<=3:
+                 v=1
+              elif (num>3 and num < 11):
                  v=2
               elif (num > 10):
                  v=3
@@ -92,21 +188,22 @@ def UpdateOS(ATS):
               addCount=addCount+v
               writer.writerow({'Supplier Sku':osCode, 'Quantity':v,'Warehouse Name':'Waitex' })
         else:
-           print (osCode+" cant find in ATS: 0 -----> 0")
+           print (osCode+" cant find in ATS: 0 -----> 0",name)
            noMatch+=1
            writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex' })
     f.close()
     fo.close()
-    print ("Total wrote:",wcount,"skipped:",skip,"Ats no match:",noMatch, "and",addCount,"items added.\n\n")
+    print ("OS total wrote:",wcount,"skipped:",skip,"Ats no match:",noMatch, "and",addCount,"items added.\n\n")
     return  
 
 def UpdateJCP(ATS):
+    print ('####################JCP file updating####################')
     wcount=0
     addCount=0
-    fo= open('output_JCP.csv',"w",newline='') 
+    fo= open('./upload/output_JCP.csv',"w",newline='') 
     fieldnames=['IN','Supplier Sku','YES','Quantity','Blank','Blank','Blank','Blank','Decription','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','Blank','SKU','JCPENNEY']	
     writer=csv.DictWriter(fo,fieldnames=fieldnames)
-    writer.writeheader()
+    #writer.writeheader()
     f= open('JCP_checkList.csv',"r")  
     look=csv.reader(f)
     for item in look:
@@ -120,6 +217,7 @@ def UpdateJCP(ATS):
         dec=item[4]
         SKU=item[5]
         name=''
+        name2=''
         if code=='WINFA CODE':
            continue
         if (code!=''):
@@ -160,7 +258,7 @@ def UpdateJCP(ATS):
            writer.writerow({'IN':'IN','Supplier Sku':jcpCode,'YES':'Yes','Quantity':'0','Decription':dec,'SKU':SKU,'JCPENNEY':'JCPENNEY' })
     f.close()
     fo.close()
-    print ("Total wrote:",wcount, "and",addCount,"items added.\n\n")
+    print ("JCP total wrote:",wcount, "and",addCount,"items added.\n\n")
     return  
 
 def shopify_import(ATS0):
@@ -215,45 +313,53 @@ for item in look:
     size=[]
     qty=[]
     style=(item[0])
+    for n in range(70):
+       if item[n]=='size1':
+          sizeN=n
+       if item[n]=='ats1':
+          atsN=n
+
     if style == 'code':
        continue
     color=(item[1])
     cate=item[6]
     des=item[2]
-    size.append(item[21])
-    size.append(item[22])
-    size.append(item[23])
-    size.append(item[24])
-    size.append(item[25])
-    size.append(item[26])
-    size.append(item[27])
-    size.append(item[28])
-    size.append(item[29])
-    size.append(item[30])
-    size.append(item[31])
-    size.append(item[32])
-    
+    size.append(item[sizeN])
+    size.append(item[sizeN+1])
+    size.append(item[sizeN+2])
+    size.append(item[sizeN+3])
+    size.append(item[sizeN+4])
+    size.append(item[sizeN+5])
+    size.append(item[sizeN+6])
+    size.append(item[sizeN+7])
+    size.append(item[sizeN+8])
+    size.append(item[sizeN+9])
+    size.append(item[sizeN+10])
+    size.append(item[sizeN+11])
 
-    qty.append(item[38])	
-    qty.append(item[39])
-    qty.append(item[40])
-    qty.append(item[41])
-    qty.append(item[42])
-    qty.append(item[43])
-    qty.append(item[44])
-    qty.append(item[45])
-    qty.append(item[46])
-    qty.append(item[47])
-    qty.append(item[48])
-    qty.append(item[49])
+    qty.append(item[atsN])
+    qty.append(item[atsN+1])
+    qty.append(item[atsN+2])
+    qty.append(item[atsN+3])
+    qty.append(item[atsN+4])
+    qty.append(item[atsN+5])
+    qty.append(item[atsN+6])
+    qty.append(item[atsN+7])
+    qty.append(item[atsN+8])
+    qty.append(item[atsN+9])
+    qty.append(item[atsN+10])
+    qty.append(item[atsN+11])
 
 
     #print (style,color,size)
     for i in range(12):
       #print (i)
       if size[i]!='':
-        key = style+"-"+color+"-"+size[i]
+        key = style+"-"+color+"-"+str(size[i])
         Qty = qty[i]
+        #print (Qty,Qty.find('.'),Qty[0:Qty.find('.')])
+        if Qty!='0':
+           Qty=Qty[0:Qty.find('.')]
         print("ATS: "+key+" <= "+Qty)
         if int(Qty)<0:
            negativeList[key]=Qty
@@ -269,10 +375,12 @@ for item in look:
       else:
         continue
 	   
-print (ATS0,count)  
+#print (ATS0,count)  
 UpdateOS(ATS)
+UpdateOS_Market(ATS)
 UpdateJCP(ATS)
 #shopify_import(ATS0)
+UpdateShopify(ATS)
 if len(negativeList)>0:
   print ("############################################## Negative List Report ##################################################")
   for item,v in negativeList.items():
@@ -280,3 +388,4 @@ if len(negativeList)>0:
 else:
   print ('No neganative item')
 f.close()
+input(" exit")

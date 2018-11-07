@@ -9,10 +9,29 @@ import pandas as pd
 outputList=['Quantity']
 #mode = input("Search for :") 
 
-mode='H'
+mode='G'
 count=0
 URLdata=[]
 urlStack={}
+def addTitleDec(style):
+   style=style.replace('W','')
+   f=open('StyleUploadLib-winfa.csv','r')
+   look=csv.reader(f)
+   output=['','','']
+   for item in look:
+       style0=item[0]
+       style0=style0.replace('#','')
+       upc = item[2]
+       title=item[3]
+       dec=  item[4]
+       if style==style0:
+          output[0]=upc
+          output[1]=title
+          output[2]=dec
+          return output
+   print ('Title Dec not found!<-------------------')
+   return output
+
 def urlSort(e):
    index=e[e.find('@')+1:]
    return index
@@ -25,6 +44,7 @@ def loadURL(data):
     size=item[3]
     url=item[4]
     index=item[5]
+    print (url)
     sublist=[]
     sublist.append(style)
     sublist.append(color)
@@ -207,10 +227,22 @@ def shopify_import(ATS0):
        URLlink=''
        style=list[0]
        color=list[1]
-       size=list[2]
-       qty=list[3]
+       size =list[2]
+
+       num  =list[3]
        cate=list[4]
        group=list[6]
+       v=0
+       num=str(num)
+       if num!='0':
+         num=num[0:num.find('.')]
+       num=int(num)
+       if num>=2 and num<=3:
+                 v=1
+       elif (num>3 and num < 11):
+                 v=2
+       elif (num > 10):
+                 v=3
        if 'W' in style and style.replace('W','') in urlStack:
          continue
        for item in URLdata:
@@ -235,11 +267,26 @@ def shopify_import(ATS0):
           color=color[0:color.find('#')]
           color=color.replace(' ','')
        size=list[2]
-       qty=list[3]
+       num=list[3]
        cate=list[4]
-       group=list[6]
-       desc=list[7]
+       group=list[5]
+       temp=addTitleDec(style)
+       if temp[1]=='' and temp[2]=='':
+          continue
+       desc=temp[2]
+       titleInfo=temp[1]
        collection=''
+       v=0
+       num=str(num)
+       if num!='0':
+         num=num[0:num.find('.')]
+       num=int(num)
+       if num>=2 and num<=3:
+                 v=1
+       elif (num>3 and num < 11):
+                 v=2
+       elif (num > 10):
+                 v=3
        if   group=='GCL':
           collection='GIOVANNA COLLECTION'
        elif group=='GIO':
@@ -256,7 +303,6 @@ def shopify_import(ATS0):
              if title not in wrote:
                 if len(style)<=3:
                    style = '0'+style
-
                 wrote[title]=1
                 if style in urlStack:
                  for itemURL in urlStack[style]:
@@ -266,9 +312,10 @@ def shopify_import(ATS0):
                     URLlink=url
                     urlStack[style].remove(itemURL)
                     break
-               
+                if title[0]=='0':
+                  title='#'+title
                 print ('Loading parent',style,color,size,cate,collection,URLlink)
-                writer.writerow({'Body (HTML)':desc,'Variant Price':'0','Image Src':URLlink,'Handle':title,'Title':title,'Vendor':'GIOVANNA APPAREL','Type':cate,'Tags':collection,'Published':'TRUE','Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style+'-'+color+'-'+size,'Variant Inventory Tracker':'','Variant Inventory Qty':'0','Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE','Gift Card':'FALSE','Google Shopping / Age Group':'Adult','Google Shopping / Gender':'Female','Google Shopping / Google Product Category':'Apparel & Accessories > Clothing','Google Shopping / AdWords Grouping':'Women suits', 'Google Shopping / Condition':'new','Google Shopping / Custom Product':'FALSE','Variant Weight Unit':'lb'})
+                writer.writerow({'Variant Grams':'1360','Body (HTML)':desc,'Variant Price':'0','Image Src':URLlink,'Handle':title,'Title':title+' '+titleInfo,'Vendor':'GIOVANNA APPAREL','Type':cate,'Tags':collection,'Published':'TRUE','Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style+'-'+color+'-'+size,'Variant Inventory Tracker':'Shopify','Variant Inventory Qty':v,'Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE','Gift Card':'FALSE','Google Shopping / Age Group':'Adult','Google Shopping / Gender':'Female','Google Shopping / Google Product Category':'Apparel & Accessories > Clothing','Google Shopping / AdWords Grouping':'Women suits', 'Google Shopping / Condition':'new','Google Shopping / Custom Product':'FALSE','Variant Weight Unit':'lb'})
              else:
                 urlList=[]
                 if style in urlStack:
@@ -284,8 +331,11 @@ def shopify_import(ATS0):
                   URLlink=url
                   urlStack[style].remove(itemURL)
                   break
+                if title[0]=='0':
+                   title='#'+title
                 print ('Loading child',index,style,color,size,cate,collection,URLlink)
-                writer.writerow({'Body (HTML)':'','Variant Price':'0','Image Src':URLlink,'Handle':title,'Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style+'-'+color+'-'+size,'Variant Inventory Tracker':'','Variant Inventory Qty':'0','Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE'})
+                writer.writerow({'Variant Grams':'1360','Body (HTML)':'','Variant Price':'0','Image Src':URLlink,'Handle':title
+				,'Option1 Name':'COLOR','Option1 Value':color,'Option2 Name':'SIZE','Option2 Value':size,'Variant SKU':style+'-'+color+'-'+size,'Variant Inventory Tracker':'Shopify','Variant Inventory Qty':v,'Variant Inventory Policy':'deny','Variant Fulfillment Service':'manual','Variant Requires Shipping':'TRUE','Variant Taxable':'FALSE'})
 
 
     fo.close()
@@ -309,7 +359,7 @@ def addURLtoCVS():
 
 
 URLdata=loadURL(URLdata)
-f= open('ATS.csv',"r")  
+f= open('Z:/Zoe/ATS/ATS.csv',"r")  
 look=csv.reader(f)
 ATS={}
 ATS0=[]
@@ -319,49 +369,54 @@ for item in look:
     size=[]
     qty=[]
     style=(item[0])
+    for n in range(70):
+       if item[n]=='size1':
+          sizeN=n
+       if item[n]=='ats1':
+          atsN=n
+
     if style == 'code':
        continue
     color=(item[1])
-    cate=item[7]
-    group=item[36]
+    cate=item[6]
     des=item[2]
-    size.append(item[21])
-    size.append(item[22])
-    size.append(item[23])
-    size.append(item[24])
-    size.append(item[25])
-    size.append(item[26])
-    size.append(item[27])
-    size.append(item[28])
-    size.append(item[29])
-    size.append(item[30])
-    size.append(item[31])
-    size.append(item[32])
-    
+    size.append(item[sizeN])
+    size.append(item[sizeN+1])
+    size.append(item[sizeN+2])
+    size.append(item[sizeN+3])
+    size.append(item[sizeN+4])
+    size.append(item[sizeN+5])
+    size.append(item[sizeN+6])
+    size.append(item[sizeN+7])
+    size.append(item[sizeN+8])
+    size.append(item[sizeN+9])
+    size.append(item[sizeN+10])
+    size.append(item[sizeN+11])
 
-    qty.append(item[38])
-    qty.append(item[39])
-    qty.append(item[40])
-    qty.append(item[41])
-    qty.append(item[42])
-    qty.append(item[43])
-    qty.append(item[44])
-    qty.append(item[45])
-    qty.append(item[46])
-    qty.append(item[47])
-    qty.append(item[48])
-    qty.append(item[49])
+    qty.append(item[atsN])
+    qty.append(item[atsN+1])
+    qty.append(item[atsN+2])
+    qty.append(item[atsN+3])
+    qty.append(item[atsN+4])
+    qty.append(item[atsN+5])
+    qty.append(item[atsN+6])
+    qty.append(item[atsN+7])
+    qty.append(item[atsN+8])
+    qty.append(item[atsN+9])
+    qty.append(item[atsN+10])
+    qty.append(item[atsN+11])
 
 
     #print (style,color,size)
     for i in range(12):
       #print (i)
       if size[i]!='':
-        key = style+"-"+color+"-"+size[i]
+        key = style+"-"+color+"-"+str(size[i])
         Qty = qty[i]
-        if Qty =='':
-           Qty=0
-        #print("ATS: "+key+" <= "+Qty)
+        #print (Qty,Qty.find('.'),Qty[0:Qty.find('.')])
+        if Qty!='0':
+           Qty=Qty[0:Qty.find('.')]
+        print("ATS: "+key+" <= "+Qty)
         if int(Qty)<0:
            negativeList[key]=Qty
         Alist=[]
@@ -370,9 +425,8 @@ for item in look:
         Alist.append(size[i])
         Alist.append(qty[i])
         Alist.append(cate)
-        Alist.append(item[35])
-        Alist.append(item[36])
-        Alist.append(item[3]) # descrpition
+        Alist.append(item[35])#group
+        Alist.append(item[36])#warehouse
         ATS0.append(Alist)
         ATS[key]=Qty
         count+=1
