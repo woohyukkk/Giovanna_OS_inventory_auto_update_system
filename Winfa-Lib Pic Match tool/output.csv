@@ -1,0 +1,738 @@
+style,color,sizes,image file
+#0650,BLK,#6-18,0650 Black_wm.jpg
+#0650,CHOCO,#6-18,0650 Chocolate_wm.jpg
+#0650,RYL,#6-18,0650 Royal_wm.jpg
+#0650,SIL,#6-18,0650 Silver_wm.jpg
+#0650,WHT,#6-18,0650 White_wm.jpg
+#0650W,BLK,#14W-30W,0650 Black_wm.jpg
+#0650W,CHOCO,#14W-26W,0650 Chocolate_wm.jpg
+#0650W,RYL,#14W-30W,0650 Royal_wm.jpg
+#0650W,SIL,#14W-26W,0650 Silver_wm.jpg
+#0650W,WHT,#14W-30W,0650 White_wm.jpg
+#0652,BLK,#8-18,0652 Black_wm.jpg
+#0652,Emerald,#8-18,0652 Emerald_wm.jpg
+#0652,RED,#8-18,0652 Red_wm.jpg
+#0652W,BLK,#14W-26W,0652 Black_wm.jpg
+#0652W,Emerald,#14W-26W,0652 Emerald_wm.jpg
+#0652W,RED,#14W-26W,0652 Red_wm.jpg
+#0653,BLK,#10-18,N/A
+#0653,WHT,#8-18,N/A
+#0653W,BLK,#14W-26W,N/A
+#0653W,WHT,#14W-26W,N/A
+#0654,RED,#8-18,0654 Red_wm.jpg
+#0654,RYL,#8-18,0654 Royal_wm.jpg
+#0654W,PURPLE,#14W-26W,0654 Purple_wm.jpg
+#0654W,RED,#14W-26W,0654 Red_wm.jpg
+#0654W,RYL,#14W-26W,0654 Royal_wm.jpg
+#0655,BLK,#8-18,0655 Black_wm.jpg
+#0655,NAVY,#8-18,0655 Navy_wm.jpg
+#0655,RYL,#8-18,0655 Royal_wm.jpg
+#0655,WHT,#8-18,0655 White_wm.jpg
+#0655W,BLK,#14W-26W,0655 Black_wm.jpg
+#0655W,NAVY,#14W-28W,0655 Navy_wm.jpg
+#0655W,RYL,#14W-26W,0655 Royal_wm.jpg
+#0655W,WHT,#14W-26W,0655 White_wm.jpg
+#0707,WHT,#8-18,0707 White_wm.jpg
+#0707W,WHT,#14W-28W,0707 White_wm.jpg
+#0708,BLK,#8-18,0708 Black_wm.jpg
+#0708,NAVY,#8-18,0708 Navy_wm.jpg
+#0708,WHT,#8-18,0708 White_wm.jpg
+#0708W,BLK,#14W-26W,0708 Black_wm.jpg
+#0708W,NAVY,#14W-30W,0708 Navy_wm.jpg
+#0708W,WHT,#14W-28W,0708 White_wm.jpg
+#0709,BLK,#10-18,0709 Black_wm.jpg
+#0709,Emerald,#8-18,0709 Emerald_wm.jpg
+#0709,RED,#8-18,0709 Red_wm.jpg
+#0709W,BLK,#14W-24W,0709 Black_wm.jpg
+#0709W,Emerald,#14W-26W,0709 Emerald_wm.jpg
+#0709W,RED,#14W-26W,0709 Red_wm.jpg
+#0710,BLK,#8-18,0710 Black_wm.jpg
+#0710,CHOCO,#8-18,0710 Chocolate_wm.jpg
+#0710,IVY,#8-18,0710 Ivory_wm.jpg
+#0710,NAVY,#8-18,0710 Navy_wm.jpg
+#0710,RYL,#8-18,0710 Royal_wm.jpg
+#0710,WHT,#8-18,0710 White_wm.jpg
+#0710W,BLK,#14W-30W,0710 Black_wm.jpg
+#0710W,CHOCO,#14W-30W,0710 Chocolate_wm.jpg
+#0710W,IVY,#14W-28W,0710 Ivory_wm.jpg
+#0710W,NAVY,#14W-30W,0710 Navy_wm.jpg
+#0710W,RYL,#14W-30W,0710 Royal_wm.jpg
+#0710W,WHT,#14W-30W,0710 White_wm.jpg
+#0711,FUCHSIA,#8-18,0711 Fuchsia_wm.jpg
+#0711,LIME,#10-18,0711 Lime_back_wm.jpg
+#0711,NAVY,#8-18,0711 Navy_wm.jpg
+#0711W,FUCHSIA,#14W-26W,0711 Fuchsia_wm.jpg
+#0711W,LIME,#14W-24W,0711 Lime_back_wm.jpg
+#0711W,NAVY,#14W-26W,0711 Navy_wm.jpg
+#0818,FUCHSIA,#10-18,0818 Fuchsia_wm.jpg
+#0818,NAVY,#8-18,0818 Navy_back_wm.jpg
+#0818W,FUCHSIA,#14W-24W,0818 Fuchsia_wm.jpg
+#0818W,NAVY,#14W-26W,0818 Navy_back_wm.jpg
+#0822,NAVY,#8-18,0822 Navy_wm.jpg
+#0822,PEACH,#10-18,0822 Peach_back_wm.jpg
+#0822W,NAVY,#14W-26W,0822 Navy_wm.jpg
+#0822W,PEACH,#14W-24W,0822 Peach_back_wm.jpg
+#0823,BLK,#8-18,0823 Black_wm.jpg
+#0823,CHOCO,#8-18,0823 Chocolate_wm.jpg
+#0823,NAVY,#8-18,0823 Navy_wm.jpg
+#0823,PURPLE,#8-18,0823 Purple_wm.jpg
+#0823,RED,#8-18,0823 Red_wm.jpg
+#0823,RYL,#8-18,0823 Royal_wm.jpg
+#0823,SIL,#10-18,0823 Silver_wm.jpg
+#0823W,BLK,#14W-30W,0823 Black_wm.jpg
+#0823W,CHOCO,#14W-26W,0823 Chocolate_wm.jpg
+#0823W,NAVY,#14W-30W,0823 Navy_wm.jpg
+#0823W,PURPLE,#14W-30W,0823 Purple_wm.jpg
+#0823W,RED,#14W-26W,0823 Red_wm.jpg
+#0823W,RYL,#14W-26W,0823 Royal_wm.jpg
+#0823W,SIL,#14W-26W,0823 Silver_wm.jpg
+#0823W,WHT,#14W-30W,0823 White_wm.jpg
+#0824,BLK,#8-18,0824 Black_wm.jpg
+#0824,CRAN,#8-18,0824 Cranberry_wm.jpg
+#0824,PLUM,#10-18,0824 Plum_wm.jpg
+#0824,RYL,#8-18,0824 Royal_wm.jpg
+#0824,SIL,#8-18,0824 Silver_wm.jpg
+#0824,WHT,#8-18,0824 White_wm.jpg
+#0824W,BLK,#14W-28W,0824 Black_wm.jpg
+#0824W,CRAN,#14W-26W,0824 Cranberry_wm.jpg
+#0824W,RYL,#14W-28W,0824 Royal_wm.jpg
+#0824W,SIL,#14W-26W,0824 Silver_wm.jpg
+#0824W,WHT,#14W-26W,0824 White_wm.jpg
+#0825,WHT,#8-18,0825 White_wm.jpg
+#0825W,CHOCO,#14W-26W,0825 Chocolate_back_wm.jpg
+#0825W,WHT,#14W-26W,0825 White_wm.jpg
+#0826,BLK,#8-18,0826 Black_back_wm.jpg
+#0826W,BLK,#14W-26W,0826 Black_back_wm.jpg
+#0867,BLK,#10-18,0867 Black_back_wm.jpg
+#0867,CHOCO,#10-18,0867 Chocolate_wm.jpg
+#0867W,BLK,#14W-26W,0867 Black_back_wm.jpg
+#0867W,CHOCO,#14W-26W,0867 Chocolate_wm.jpg
+#0867W,WHT,#14W-26W,0867 White_wm.jpg
+#0875,LAV,#8-18,N/A
+#0875,PEACOCK,#10-18,0875 Peacock_wm.jpg
+#0877,NAVY,#8-18,0877 Navy_cami_wm.jpg
+#0877,WHT,#8-18,0877 White_wm.jpg
+#0877W,NAVY,#14W-26W,0877 Navy_cami_wm.jpg
+#0877W,WHT,#14W-26W,0877 White_wm.jpg
+#0888,SAPP/TEAL,#8-18,N/A
+#0888W,SAPP/TEAL,#16W-24W,N/A
+#0889,AQUABLUE,#10-18,0889 Aqua blue_back_wm.jpg
+#0889,WHT,#10-18,0889 White_wm.jpg
+#0889W,AQUABLUE,#14W-26W,0889 Aqua blue_back_wm.jpg
+#0889W,WHT,#14W-26W,0889 White_wm.jpg
+#0898,SFM,#10-18,0898 Seafoam_wm.jpg
+#0898W,SFM,#14W-24W,0898 Seafoam_wm.jpg
+#0899,SFM,#10-18,0899 Seafoam_back_wm.jpg
+#0899W,SFM,#14W-26W,0899 Seafoam_back_wm.jpg
+#0899W,WHT,#14W-26W,0899 White_1_wm.jpg
+#0903,BLK,#8-18,0903 Black_wm.jpg
+#0903,WHT,#8-18,0903 White_wm.jpg
+#0903W,BLK,#14W-24W,0903 Black_wm.jpg
+#0903W,WHT,#14W-24W,0903 White_wm.jpg
+#0906,W/N,#10-18,0906 White-navy_wm.jpg
+#0906,WHT/TURQ,#10-18,0906 White-turq_back_wm.jpg
+#0906W,W/N,#14W-26W,0906 White-navy_wm.jpg
+#0906W,WHT/TURQ,#14W-26W,0906 White-turq_back_wm.jpg
+#0907,Emerald,#10-18,0907 Emerald_back_wm.jpg
+#0907W,CHAM,#14W-26W,0907 Champagne_wm.jpg
+#0907W,Emerald,#14W-26W,0907 Emerald_back_wm.jpg
+#0908,CHAM,#10-18,0908 Champagne_wm.jpg
+#0908,Emerald,#10-18,0908 Emerald_back_wm.jpg
+#0908W,CHAM,#14W-26W,0908 Champagne_wm.jpg
+#0908W,Emerald,#14W-26W,0908 Emerald_back_wm.jpg
+#0910,BLK/WHTDOT,#8-18,0910 Black-wht Dot_back_wm.jpg
+#0910W,BLK/WHTDOT,#14W-28W,0910 Black-wht Dot_back_wm.jpg
+#0912,BLUE,#10-18,N/A
+#0912,WHT,#10-18,N/A
+#0912V,PINK,#8-18,N/A
+#0912W,BLUE,#14W-24W,N/A
+#0912W,WHT,#14W-24W,N/A
+#0914V,BLUE,#8-18,N/A
+#0914VW,BLUE,#14W-24W,N/A
+#0914W,YELLOW,#14W-26W,N/A
+#0915,BLUE,#10-18,N/A
+#0915W,BLUE,#14W-24W,N/A
+#0918,NAVY,#8-18,0918 Navy_back_wm.jpg
+#0918W,NAVY,#14W-26W,0918 Navy_back_wm.jpg
+#0919,BLK,#8-18,N/A
+#0919,FUCHSIA,#8-18,N/A
+#0919W,BLK,#14W-26W,N/A
+#0919W,FUCHSIA,#16W-24W,N/A
+#0920,BLK,#10-18,0920 Black_wm.jpg
+#0920,WHT,#10-18,N/A
+#0920W,BLK,#14W-28W,0920 Black_wm.jpg
+#0920W,WHT,#14W-28W,N/A
+#0921,BLK,#10-18,0921 Black_wm.jpg
+#0921,WHT,#10-18,N/A
+#0921W,BLK,#14W-26W,0921 Black_wm.jpg
+#0921W,WHT,#14W-26W,N/A
+#0924V,WHT,#8-18,N/A
+#0924VW,WHT,#14W-24W,N/A
+#D1318,FUSHCIA/RYL,"#M,L,XL,1X,2X",N/A
+#D1319,BLUE,#N/A,D1319 Blue_wm.jpg
+#D1319,PURPLE,#N/A,D1319 Purple_wm.jpg
+#D1320,MUSTARD/GLD,#XL-2X,D1320 Mustard-gold_wm.jpg
+#D1320,OLIVE/BLK,#XL-2X,N/A
+#D1320,RYL,#XL-2X,D1320 Royal_wm.jpg
+#D1321,BLK,#N/A,D1321 Black_wm.jpg
+#D1321,WHT,#N/A,D1321 White_wm.jpg
+#D1322,DENIMDOT,#N/A,D1322 Denim Dot_wm.jpg
+#D1323,SIL,#M-1X,D1323 Silver_wm.jpg
+#D1323,WHT,#M-1X,D1323 White_wm.jpg
+#D1324,DENIMDOT,"#M,L,XL,1X,2X",D1324 Denim Dot_wm.jpg
+#D1325,DENIMDOT,"#M,L,XL,1X,2X",D1325 Denim Dot_wm.jpg
+#D1326,WHT,#M-1X,D1326 White_wm.jpg
+#D1326P,BLUEPRT,#M-1X,D1326P Blue print_wm.jpg
+#D1326P,YELPRT,#M-1X,D1326P Yellow print_wm.jpg
+#D1327,GREEN,"#M,L,XL,1X,2X",D1327 Green-pink_wm.jpg
+#D1327,GREEN/PINK,"#M,L,XL,1X,2X",D1327 Green-pink_wm.jpg
+#D1327,GREEN/YEL,"#M,L,XL,1X,2X",D1327 Green-yellow_wm.jpg
+#D1327,RYL,"#M,L,XL,1X,2X",D1327 Green-yellow_wm.jpg
+#D1329,CORALPINK,#10-18,D1329 Coral pink_wm.jpg
+#D1329,WHT,#10-18,D1329 White_back_wm.jpg
+#D1329W,CORALPINK,#14W-24W,D1329 Coral pink_wm.jpg
+#D1329W,WHT,#14W-24W,D1329 White_back_wm.jpg
+#D1331,RAINBOW,"#M,L,XL,1X,2X",D1331 Rainbow_wm.jpg
+#D1331,RED,"#M,L,XL,1X,2X",N/A
+#D1332,BLACK/WHT,#S-2X,D1332 Black-wht_wm.jpg
+#D1332,BLK/BLK,#S-2X,D1332 Black-black_back_wm.jpg
+#D1332,WHT/WHT,#S-2X,D1332 White-white_wm.jpg
+#D1333,IVY,#12-18,D1333 Ivory_wm.jpg
+#D1333,NAVY,#12-18,D1333 Navy_1_wm.jpg
+#D1333W,LAV,#14W-26W,D1333 Lavender_back_wm.jpg
+#D1333W,NAVY,#14W-24W,D1333 Navy_1_wm.jpg
+#D1334,PURPLE,#10-18,D1334 Purple_wm.jpg
+#D1334W,NAVY,#14W-26W,D1334 Navy_dress_wm.jpg
+#D1334W,PURPLE,#14W-26W,D1334 Purple_wm.jpg
+#D1335,W/B,#10-18,D1335 White-blk_wm.jpg
+#D1335W,W/B,#14W-26W,D1335 White-blk_wm.jpg
+#D1336W,W/B,#14W-26W,D1336 White-blk_wm.jpg
+#D1337,MULTI,#10-18,D1337 Multi_wm.jpg
+#D1337W,MULTI,#14W-24W,D1337 Multi_wm.jpg
+#D1338,BLACK/WHT,#10-18,D1338 Black-wht_wm.jpg
+#D1338W,BLACK/WHT,#14W-26W,D1338 Black-wht_wm.jpg
+#D1339W,GOLD/RYL,#14W-26W,D1339 Gold-royal_wm.jpg
+#D1340,GOLD/RED/BLK,#8-18,D1340 Gold-red-blk_1_wm.jpg
+#D1340W,GOLD/RED/BLK,#14W-26W,D1340 Gold-red-blk_1_wm.jpg
+#D1341,ORGMULTI,#10-18,D1341 Orange multi_wm.jpg
+#D1341,SFMMULTI,#10-18,D1341 Seafoam multi_wm.jpg
+#D1341W,ORGMULTI,#16W-24W,D1341 Orange multi_wm.jpg
+#D1341W,SFMMULTI,#16W-24W,D1341 Seafoam multi_wm.jpg
+#D1342,BLK/RED,#8-18,D1342 Black-red_1_wm.jpg
+#D1342,WHT/ROYAL,#8-18,D1342 White-royal_back_wm.jpg
+#D1342W,BLK/RED,#14W-26W,D1342 Black-red_1_wm.jpg
+#D1342W,WHT/ROYAL,#14W-26W,D1342 White-royal_back_wm.jpg
+#D1343W,WHT,#14W-28W,D1343 White_1_wm.jpg
+#D1344,GLD/BLK,#6-18,D1344 Gold-blk_1_wm.jpg
+#D1344W,GLD/BLK,#14W-26W,D1344 Gold-blk_1_wm.jpg
+#D1344W,WHT01,#14W-28W,N/A
+#D1345,SAPPHIRE,#10-18,D1345 Sapphire_1_wm.jpg
+#D1345,WHT,#10-18,D1345 White_wm.jpg
+#D1345W,GOLD,#14W-26W,D1345 Gold_dress_wm.jpg
+#D1345W,SAPPHIRE,#14W-26W,D1345 Sapphire_1_wm.jpg
+#D1345W,WHT,#14W-26W,D1345 White_wm.jpg
+#D1346,BLK,#10-18,D1346 Black_wm.jpg
+#D1346W,BLK,#14W-26W,D1346 Black_wm.jpg
+#D1346W,WHT,#14W-30W,D1346 White_wm.jpg
+#D1347,MULTI,#10-18,D1347 Multi_wm.jpg
+#D1347W,MULTI,#14W-26W,D1347 Multi_wm.jpg
+#D1348,MULTI,#10-18,D1348 Multi_back_wm.jpg
+#D1348W,MULTI,#14W-26W,D1348 Multi_back_wm.jpg
+#D1349,BLK/PNK,#8-18,D1349 Black-pink_1_wm.jpg
+#D1349W,BLK/PNK,#14W-28W,D1349 Black-pink_1_wm.jpg
+#D1351,BLK,"#M,L,XL,1X,2X",N/A
+#D1351,WHT,"#M,L,XL,1X,2X",N/A
+#D1423,DK.SILVER,#10-18,N/A
+#D1423B,BLK,#12-20,D1423B Black_back_wm.jpg
+#D1423B,CHAM,#10-18,D1423B Champagne_dress_wm.jpg
+#D1423B,LT.SILVER,#10-18,D1423B Lt. Silver_dress_wm.jpg
+#D1423BW,BLK,#14W-24W,D1423B Black_back_wm.jpg
+#D1423BW,CHAM,#14W-26W,D1423B Champagne_dress_wm.jpg
+#D1423BW,LT.SILVER,#14W-26W,D1423B Lt. Silver_dress_wm.jpg
+#D1423W,DK.SILVER,#14W-26W,N/A
+#D1423W,SIL,#14W-22W,D1423B Lt. Silver_dress_wm.jpg
+#D1424,BLK,#10-18,D1424 Black_wm.jpg
+#D1424,BURGUNDY,#10-18,D1424 Burgundy_back_wm.jpg
+#D1424,CHAM,#10-18,D1424 Champagne_back_wm.jpg
+#D1424,WHT,#10-18,D1424 White_wm.jpg
+#D1424W,BURGUNDY,#14W-26W,D1424 Burgundy_back_wm.jpg
+#D1424W,CHAM,#14W-26W,D1424 Champagne_back_wm.jpg
+#D1424W,RYL,#14W-26W,D1424 Royal_wm.jpg
+#D1424W,WHT,#14W-26W,D1424 White_wm.jpg
+#D1435,BLK,#6-18,D1435 Black_wm.jpg
+#D1435,LAV,#6-18,D1435 Lavender_wm.jpg
+#D1435,PURPLE,#6-18,D1435 Purple_wm.jpg
+#D1435,SAPPHIRE,#6-18,D1435 Sapphire_wm.jpg
+#D1435,WHT,#6-18,D1435 White_wm.jpg
+#D1435W,BLK,#14W-28W,D1435 Black_wm.jpg
+#D1435W,PURPLE,#14W-32W,D1435 Purple_wm.jpg
+#D1435W,SAPPHIRE,#14W-30W,D1435 Sapphire_wm.jpg
+#D1435W,WHT,#14W-32W,D1435 White_wm.jpg
+#D1446,PURP/BLK,#10-18,D1446 Purple-blk_wm.jpg
+#D1446,S.PINK/BLK,#8-18,D1446 S.Pink-black_wm.jpg
+#D1446W,NVY/W,#14W-26W,D1446 Navy-wht_wm.jpg
+#D1446W,PURP/BLK,#14W-26W,D1446 Purple-blk_wm.jpg
+#D1446W,RED/BLK,#16W-26W,D1446 Red-black_wm.jpg
+#D1446W,S.PINK/BLK,#14W-26W,D1446 S.Pink-black_wm.jpg
+#D1450,BLK,#10-18,D1450 Black_wm.jpg
+#D1450,IVY,#10-18,D1450 Ivory_1_wm.jpg
+#D1450,LIME,#12-18,D1450 Lime_wm.jpg
+#D1450,PURPLE,#12-18,D1450 Purple_wm.jpg
+#D1450,RYL,#10-18,D1450 Royal_back_wm.jpg
+#D1450W,BLK,#14W-26W,D1450 Black_wm.jpg
+#D1450W,IVY,#16W-24W,D1450 Ivory_1_wm.jpg
+#D1450W,LIME,#16W-24W,D1450 Lime_wm.jpg
+#D1450W,PURPLE,#16W-24W,D1450 Purple_wm.jpg
+#D1450W,RYL,#14W-26W,D1450 Royal_back_wm.jpg
+#D1451,BLK,#8-18,D1451 Black_wm.jpg
+#D1451,CRAN,#8-18,D1451 Cranberry_wm.jpg
+#D1451,WHT,#8-18,D1451 White_wm.jpg
+#D1451W,BLK,#14W-26W,D1451 Black_wm.jpg
+#D1451W,CRAN,#14W-26W,D1451 Cranberry_wm.jpg
+#D1451W,WHT,#14W-26W,D1451 White_wm.jpg
+#D1453,ICEBLUE,#8-18,D1453 Ice blue_wm.jpg
+#D1453,PINK,#8-18,D1453 Pink_wm.jpg
+#D1453W,ICEBLUE,#14W-26W,D1453 Ice blue_wm.jpg
+#D1453W,PINK,#14W-26W,D1453 Pink_wm.jpg
+#D1455,BLK,#10-18,D1455 Black_wm.jpg
+#D1455,LAV,#10-18,D1455 Lavender_back_wm.jpg
+#D1455,WHT,#10-18,D1455 White_wm.jpg
+#D1455W,BLK,#14W-24W,D1455 Black_wm.jpg
+#D1455W,LAV,#14W-24W,D1455 Lavender_back_wm.jpg
+#D1455W,WHT,#14W-24W,D1455 White_wm.jpg
+#D1457W,WHT/BLUE,#16W-24W,D1457 White-blue_wm.jpg
+#D1457W,WHT/PNK,#16W-24W,D1457 White-pink_wm.jpg
+#D1458,BURGUNDY,#10-18,D1458 Burgundy_dress_wm.jpg
+#D1458,GREEN,#10-18,D1458 Green_wm.jpg
+#D1458,NAVY,#8-18,D1458 Navy_wm.jpg
+#D1458,WHT,#8-18,D1458 White_wm.jpg
+#D1458W,BURGUNDY,#14W-26W,D1458 Burgundy_dress_wm.jpg
+#D1458W,GREEN,#16W-26W,D1458 Green_wm.jpg
+#D1458W,NAVY,#14W-26W,D1458 Navy_wm.jpg
+#D1458W,PINK,#14W-26W,D1458 Pink_1_wm.jpg
+#D1458W,WHT,#14W-26W,D1458 White_wm.jpg
+#D1467W,LILAC/BLK,#14W-24W,D1467 Lilac-blk_wm.jpg
+#D1467W,ORANGE/BLK,#14W-24W,D1467 Orange-blk_back_wm.jpg
+#D1468,PINK/WHT,#8-18,D1468 Pink-wht_back_wm.jpg
+#D1468,WHT,#8-18,D1468 Lime-wht_wm.jpg
+#D1468,YELLOW/WHT,#8-18,D1468 Yellow-wht_wm.jpg
+#D1468W,LIME/WHT,#14W-24W,D1468 Lime-wht_wm.jpg
+#D1468W,PINK/WHT,#14W-26W,D1468 Pink-wht_back_wm.jpg
+#D1468W,YELLOW/WHT,#14W-26W,D1468 Yellow-wht_wm.jpg
+#D1469W,GLD/BLK,#16W-24W,D1469 Gold-blk_wm.jpg
+#D1469W,RED/BLK,#16W-24W,D1469 Red-blk_back_wm.jpg
+#D1469W,WHT,#14W-26W,D1469 White_wm.jpg
+#D1473,BLK,#12-18,D1473 Black_back_wm.jpg
+#D1473,NAVY,#12-18,D1473 Navy_wm.jpg
+#D1473W,BLK,#14W-24W,D1473 Black_back_wm.jpg
+#D1474,BLK,#10-18,D1474 Black_1_wm.jpg
+#D1474,IVY,#10-18,D1474 Ivory_back_wm.jpg
+#D1474W,BLK,#14W-24W,D1474 Black_1_wm.jpg
+#D1474W,IVY,#14W-24W,D1474 Ivory_back_wm.jpg
+#D1475,DENIMBLUE,"#M,L,XL,1X,2X",D1475 Denim Blue_1_wm.jpg
+#D1475,KHAKI,"#M,L,XL,1X,2X",D1475 Khaki_1_wm.jpg
+#D1475,LAV,"#M,L,XL,1X,2X",D1475 Lavender_wm.jpg
+#D1475,WHT,"#M,L,XL,1X,2X",D1475 White_1_wm.jpg
+#D1476,DENIMBLUE,#S-2X,D1476 Denim blue_wm.jpg
+#D1476,LAV,"#M,L,XL,1X,2X",D1476 Lavender_1_wm.jpg
+#D1477,PINK,"#M,L,XL,1X,2X",D1477 Pink_wm.jpg
+#D1477,WHT,"#M,L,XL,1X,2X",D1477 White_back_wm.jpg
+#D1477L,DENIM,"#M,L,XL,1X,2X,3X",N/A
+#D1477L,WHT,"#M,L,XL,1X,2X,3X",N/A
+#D1479,BLK,#10-18,D1479 Black_wm.jpg
+#D1479,BLUE,#10-18,D1479 Ice blue_wm.jpg
+#D1479,PURPLE,#10-18,D1479 Purple_back_wm.jpg
+#D1479W,BLK,#14W-26W,D1479 Black_wm.jpg
+#D1479W,PURPLE,#14W-26W,D1479 Purple_back_wm.jpg
+#D1481,HP,#10-18,D1481 Hot Pink_wm.jpg
+#D1481,WHT,#10-18,D1481 White_wm.jpg
+#D1481W,HP,#14W-24W,D1481 Hot Pink_wm.jpg
+#D1483,BLACK/GREEN,#10-18,D1483 Black-green_wm.jpg
+#D1483,W/B,#10-18,D1483 White-blk_1_wm.jpg
+#D1483,WHT/LV,#10-18,D1483 White-lav_wm.jpg
+#D1483W,BLACK/GREEN,#14W-24W,D1483 Black-green_wm.jpg
+#D1483W,W/B,#14W-24W,D1483 White-blk_1_wm.jpg
+#D1483W,WHT/LV,#14W-24W,D1483 White-lav_wm.jpg
+#D1484,LEMONYEL,#8-18,D1484 Lemon yellow_back_wm.jpg
+#D1484,LIME,#8-18,D1484 Lime_wm.jpg
+#D1484W,LEMONYEL,#14W-24W,D1484 Lemon yellow_back_wm.jpg
+#D1484W,LIME,#14W-24W,D1484 Lime_wm.jpg
+#D1485,DK.LIME,#8-18,D1485 Dk. Lime_wm.jpg
+#D1485,ICEBLUE,#8-18,D1485 Ice blue_back_wm.jpg
+#D1485,ROSEPINK,#10-18,D1485 Rose Pink_back_wm.jpg
+#D1485W,DK.LIME,#14W-26W,D1485 Dk. Lime_wm.jpg
+#D1486,NAVY,#10-18,D1486 Navy_wm.jpg
+#D1486,WHT,#10-18,D1486 White_back_wm.jpg
+#D1486W,NAVY,#14W-26W,D1486 Navy_wm.jpg
+#D1488,PUR/TURQ,#8-18,D1488 Purple-turq_wm.jpg
+#D1488W,PUR/TURQ,#14W-26W,D1488 Purple-turq_wm.jpg
+#D1489,DENIMBLUE,"#M,L,XL,1X,2X",D1489 Denim blue_back_wm.jpg
+#D1489,PINK,"#M,L,XL,1X,2X",D1489 Pink_wm.jpg
+#D1490,WHT,#10-18,D1490 White_1_wm.jpg
+#D1490W,WHT,#14W-24W,D1490 White_1_wm.jpg
+#D1491,CHAM,#8-18,D1491 Champagne_back_wm.jpg
+#D1491W,CHAM,#14W-24W,D1491 Champagne_back_wm.jpg
+#D1492,LIMEGREEN,#8-18,D1492 Lime green_1_wm.jpg
+#D1492W,LIMEGREEN,#14W-26W,D1492 Lime green_1_wm.jpg
+#D1493W,SIL,#14W-26W,D1493 Silver_back_wm.jpg
+#D1493W,WHT,#14W-26W,D1493 White_wm.jpg
+#D1494,IVY,#10-18,D1494 Ivory_1_wm.jpg
+#D1494,PINK,#10-18,D1494 Pink_wm.jpg
+#D1494W,IVY,#14W-26W,D1494 Ivory_1_wm.jpg
+#D1494W,PINK,#14W-26W,D1494 Pink_wm.jpg
+#D1495,NAVY,#10-18,D1495 Navy_back_wm.jpg
+#D1495,WHT,#10-18,D1495 White_wm.jpg
+#D1495W,NAVY,#14W-26W,D1495 Navy_back_wm.jpg
+#D1495W,WHT,#14W-26W,D1495 White_wm.jpg
+#D1496,BLUE,#10-18,D1496 Blue_1_wm.jpg
+#D1496W,BLUE,#14W-24W,D1496 Blue_1_wm.jpg
+#D1497W,LIMEGREEN,#14W-24W,D1497 Lime green_back_wm.jpg
+#D1498,NAVY,#10-18,D1498 Navy_1_wm.jpg
+#D1498,PUR/GLD,#10-18,D1498 Purple-gold_wm.jpg
+#D1498,RED/BLK,#10-18,D1498 Red-blk_wm.jpg
+#D1498W,NAVY,#14W-24W,D1498 Navy_1_wm.jpg
+#D1498W,PUR/GLD,#14W-24W,D1498 Purple-gold_wm.jpg
+#D1498W,RED/BLK,#14W-24W,D1498 Red-blk_wm.jpg
+#D1499,CHAM,#8-18,D1499 Champagne_wm.jpg
+#D1499,WHT,#8-18,D1499 White_wm.jpg
+#D1499W,CHAM,#14W-24W,D1499 Champagne_wm.jpg
+#D1499W,WHT,#14W-24W,D1499 White_wm.jpg
+#D1500,IVY,#8-18,D1500 Ivory_1_wm.jpg
+#D1500W,IVY,#14W-24W,D1500 Ivory_1_wm.jpg
+#D1501,BLK,#8-18,D1501 Black leopard_back_wm.jpg
+#D1501W,BLK,#14W-24W,D1501 Black leopard_back_wm.jpg
+#D1502,BLK/GRN,#8-18,D1502 Black-green_wm.jpg
+#D1502,BLK/PNK,#8-18,D1502 Black-pink_wm.jpg
+#D1502W,BLK/GRN,#14W-24W,D1502 Black-green_wm.jpg
+#D1502W,BLK/PNK,#14W-24W,D1502 Black-pink_wm.jpg
+#D1503,A.GRN,#10-18,N/A
+#D1503,PURPLE,#10-18,N/A
+#D1503,WHT,#10-18,N/A
+#D1503W,A.GRN,#14W-26W,N/A
+#D1503W,PURPLE,#14W-26W,N/A
+#D1503W,WHT,#14W-26W,N/A
+#D1504,CHAM,#8-18,D1504 Champagne_1_wm.jpg
+#D1504,PINK,#8-18,N/A
+#D1504W,CHAM,#14W-26W,D1504 Champagne_1_wm.jpg
+#D1504W,PINK,#14W-26W,N/A
+#D1504W,WHT,#14W-26W,N/A
+#D1505,OLIVE,#8-18,D1505 Olive_back_wm.jpg
+#D1505W,OLIVE,#14W-24W,D1505 Olive_back_wm.jpg
+#D1506,OLIVE,#10-18,D1506 Olive_back_wm.jpg
+#D1506W,OLIVE,#14W-24W,D1506 Olive_back_wm.jpg
+#D1507,WHT,#10-18,N/A
+#D1507W,WHT,#14W-24W,N/A
+#D5005,CHAM,#10-20,D5005 champagne_wm.jpg
+#D7208,RED,#10-18,D7208 Red_wm.jpg
+#G0842,WHT/TURQ,#8-18,G0842 White-turq_back_wm.jpg
+#G0842W,WHT/TURQ,#14W-26W,G0842 White-turq_back_wm.jpg
+#G0844,CHAM,#8-18,G0844 Champ_wm.jpg
+#G0844,GLD/BLK,#10-18,G0844 Gold-blk_back_wm.jpg
+#G0844,IVY,#8-18,G0844 Ivory_wm.jpg
+#G0844,SIL,#8-18,G0844 Silver_1_wm.jpg
+#G0844,WHT,#8-18,G0844 White_wm.jpg
+#G0844W,BLK,#14W-24W,G0844 Black_wm.jpg
+#G0844W,CHAM,#14W-26W,G0844 Champ_wm.jpg
+#G0844W,GLD/BLK,#14W-22W,G0844 Gold-blk_back_wm.jpg
+#G0844W,ICEBLUE,#14W-24W,G0844 Ice blue_wm.jpg
+#G0844W,IVY,#14W-26W,G0844 Ivory_wm.jpg
+#G0844W,SIL,#14W-26W,G0844 Silver_1_wm.jpg
+#G0844W,WHT,#14W-24W,G0844 White_wm.jpg
+#G1007,CHOCO,#10-18,G1007 Chocolate_wm.jpg
+#G1007,GOLD,#10-18,G1007 Gold_wm.jpg
+#G1007,LAV,#8-18,G1007 Dk. Lavender_wm.jpg
+#G1007,PINK,#10-18,G1007 Pink_wm.jpg
+#G1007,RED,#8-18,G1007 Red_wm.jpg
+#G1007,WHT,#8-18,G1007 White_wm.jpg
+#G1007W,BLK,#14W-26W,G1007 Black_wm.jpg
+#G1007W,Emerald,#14W-24W,G1007 EMERALD_wm.jpg
+#G1007W,GOLD,#14W-24W,G1007 Gold_wm.jpg
+#G1007W,ICEBLUE,#14W-24W,G1007 Ice blue_wm.jpg
+#G1007W,LAV,#14W-26W,G1007 Dk. Lavender_wm.jpg
+#G1007W,PINK,#14W-26W,G1007 Pink_wm.jpg
+#G1007W,RED,#14W-26W,G1007 Red_wm.jpg
+#G1007W,WHT,#14W-26W,G1007 White_wm.jpg
+#G1011,CHAM,#8-18,G1011 Champagne_wm.jpg
+#G1011,GUNMETAL,#10-18,G1011 Gunmetal_back_wm.jpg
+#G1011,RED,#8-18,G1011 Red_wm.jpg
+#G1011,WHT,#8-18,G1011 White_wm.jpg
+#G1011W,CHAM,#14W-26W,G1011 Champagne_wm.jpg
+#G1011W,GUNMETAL,#14W-26W,G1011 Gunmetal_back_wm.jpg
+#G1011W,RED,#14W-26W,G1011 Red_wm.jpg
+#G1011W,WHT,#14W-24W,G1011 White_wm.jpg
+#G1018,PURPLE,#10-18,G1018 Purple_wm.jpg
+#G1018W,BLK,#14W-26W,G1018 Black_wm.jpg
+#G1018W,CRAN,#14W-26W,G1018 Cranberry_wm.jpg
+#G1018W,GINGER,#14W-26W,G1018 Ginger_wm.jpg
+#G1018W,SPK,#14W-28W,G1018 Soft Pink_wm.jpg
+#G1018W,WHT,#14W-28W,G1018 White_wm.jpg
+#G1035,BLK/ROYAL,#10-18,G1035 Black-royal_back_wm.jpg
+#G1035W,BLK/ROYAL,#16W-24W,G1035 Black-royal_back_wm.jpg
+#G1041,PURPLE,#10-18,G1041 Purple_wm.jpg
+#G1041W,PURPLE,#14W-24W,G1041 Purple_wm.jpg
+#G1045,HOTPINK/BLK,#10-18,G1045 Hot pink-blk_wm.jpg
+#G1045,LIME/BLK,#10-18,G1045 Lime-blk_back_wm.jpg
+#G1045,RYL/BLK,#10-18,G1045 Royal-blk_wm.jpg
+#G1045W,HOTPINK/BLK,#14W-24W,G1045 Hot pink-blk_wm.jpg
+#G1045W,LIME/BLK,#14W-24W,G1045 Lime-blk_back_wm.jpg
+#G1045W,RYL/BLK,#14W-24W,G1045 Royal-blk_wm.jpg
+#G1047,ICEBLUE,#8-18,G1047 Ice blue_back_wm.jpg
+#G1047,WHT,#8-18,G1047 White_wm.jpg
+#G1047W,ICEBLUE,#14W-24W,G1047 Ice blue_back_wm.jpg
+#G1047W,WHT,#14W-24W,G1047 White_wm.jpg
+#G1048,LEMONYEL,#10-18,G1048 Lemon Yellow_wm.jpg
+#G1048,ROSEPINK,#10-18,G1048 Rose pink_wm.jpg
+#G1048W,LEMONYEL,#14W-24W,G1048 Lemon Yellow_wm.jpg
+#G1048W,ROSEPINK,#14W-24W,G1048 Rose pink_wm.jpg
+#G1049,ROSEPINK,#8-18,G1049 Rose pink_back_wm.jpg
+#G1050W,PEACH,#14W-26W,G1050 Peach_wm.jpg
+#G1051,GOLD,#10-18,G1051 Gold_wm.jpg
+#G1051,GREEN,#10-18,G1051 Green_back_wm.jpg
+#G1051W,GOLD,#14W-24W,G1051 Gold_wm.jpg
+#G1051W,GREEN,#14W-24W,G1051 Green_back_wm.jpg
+#G1053,NVY/W,#10-18,G1053 Navy-wht_1_wm.jpg
+#G1053W,NVY/W,#14W-24W,G1053 Navy-wht_1_wm.jpg
+#G1055,NVY/W,#8-18,G1055 Navy-wht_cami_wm.jpg
+#G1055W,NVY/W,#14W-26W,G1055 Navy-wht_cami_wm.jpg
+#G1056,PURP/WHITE,#10-18,G1056 Purple-white_back_wm.jpg
+#G1056W,PURP/WHITE,#14W-26W,G1056 Purple-white_back_wm.jpg
+#G1059,BLK,#10-18,G1059 Black_cami_wm.jpg
+#G1059,FUCHSIA,#10-18,G1059 Fuchsia_back_wm.jpg
+#G1059,IVY,#10-18,G1059 Ivory_wm.jpg
+#G1059W,BLK,#14W-26W,G1059 Black_cami_wm.jpg
+#G1059W,FUCHSIA,#14W-26W,G1059 Fuchsia_back_wm.jpg
+#G1059W,IVY,#14W-26W,G1059 Ivory_wm.jpg
+#G1060,LAV,#8-18,G1060 Lavender_back_wm.jpg
+#G1060W,OFFWHT,#14W-24W,G1060 Off white_wm.jpg
+#G1062,FUCHSIA,#8-18,G1062 Fuchsia_wm.jpg
+#G1062W,FUCHSIA,#14W-24W,G1062 Fuchsia_wm.jpg
+#G1062W,MUSTARD,#14W-24W,G1062 Mustard_back_wm.jpg
+#G1063,PINK,#10-18,G1063 Pink_wm.jpg
+#G1063W,ICEBLUE,#14W-24W,G1063 Ice blue_back_wm.jpg
+#G1063W,PINK,#14W-24W,G1063 Pink_wm.jpg
+#G1064,BLK,#12-18,G1064 Black leopard_1_wm.jpg
+#G1064W,BLK,#14W-24W,G1064 Black leopard_1_wm.jpg
+#G1065,BLK,#10-18,G1065 Black leopard_back_wm.jpg
+#G1065W,BLK,#14W-24W,G1065 Black leopard_back_wm.jpg
+#G1066,FUCHSIA,#10-18,G1066 Fuchsia_cami_wm.jpg
+#G1066,MUSTARD,#10-18,G1066 Mustard_back_wm.jpg
+#G1066W,FUCHSIA,#14W-24W,G1066 Fuchsia_cami_wm.jpg
+#G1066W,MUSTARD,#14W-24W,G1066 Mustard_back_wm.jpg
+#G1067,NAVY/GRN,#10-18,G1067 Navy-green_cami_wm.jpg
+#G1067,PUR/GLD,#10-18,G1067 Purple-gold_back_wm.jpg
+#G1067W,NAVY/GRN,#14W-24W,G1067 Navy-green_cami_wm.jpg
+#G1067W,PUR/GLD,#14W-24W,G1067 Purple-gold_back_wm.jpg
+#G1068,NAVY/GRN,#8-18,G1068 Navy-green_wm.jpg
+#G1068,RED/BLK,#8-18,G1068 Red-blk_back_wm.jpg
+#G1068W,NAVY/GRN,#14W-26W,G1068 Navy-green_wm.jpg
+#G1068W,RED/BLK,#14W-26W,G1068 Red-blk_back_wm.jpg
+#G1069,CINNAMON/TPE,#10-18,N/A
+#G1069,STEEL/SIL,#10-18,N/A
+#G1069,WHT,#10-18,G1069A White_wm.jpg
+#G1069W,WHT,#14W-24W,G1069A White_wm.jpg
+#G1069W,CINNAMON/TPE,#14W-24W,N/A
+#G1069W,STEEL/SIL,#14W-24W,N/A
+#G1070,PURPLE,#10-18,N/A
+#G1070,RED,#10-18,N/A
+#G1070,WHT,#10-18,N/A
+#G1070W,PURPLE,#14W-26W,N/A
+#G1070W,RED,#14W-26W,N/A
+#G1070W,WHT,#14W-26W,N/A
+#G1072,A.GRN,#10-18,G1072 Apple Green_wm.jpg
+#G1072,PURPLE,#10-18,N/A
+#G1072,WHT,#10-18,N/A
+#G1072W,A.GRN,#14W-24W,G1072 Apple Green_wm.jpg
+#G1072W,PURPLE,#14W-24W,N/A
+#G1072W,WHT,#14W-24W,N/A
+#G1074,A.GRN,#10-18,N/A
+#G1074,PINK,#10-18,N/A
+#G1074,WHT,#10-18,N/A
+#G1074W,A.GRN,#14W-26W,N/A
+#G1074W,PINK,#14W-26W,N/A
+#G1074W,WHT,#14W-26W,N/A
+#G1080,PURPLE,#8-18,G1080 Purple_back_wm.jpg
+#G1080,RED,#8-18,G1080 Red_back_wm.jpg
+#G1080,WHT,#8-18,G1080 White_1_wm.jpg
+#G1080W,PURPLE,#14W-24W,G1080 Purple_back_wm.jpg
+#G1080W,RED,#14W-24W,G1080 Red_back_wm.jpg
+#G1080W,WHT,#14W-24W,G1080 White_1_wm.jpg
+#G1081,BLK,#8-18,G1081 Black_back_wm.jpg
+#G1081,MUSTARDGLD,#8-18,G1081 Mustard gold_wm.jpg
+#G1081,RED,#8-18,G1081 Red_dress_1_wm.jpg
+#G1081W,BLK,#14W-24W,G1081 Black_back_wm.jpg
+#G1081W,MUSTARDGLD,#14W-24W,G1081 Mustard gold_wm.jpg
+#G1081W,RED,#14W-24W,G1081 Red_dress_1_wm.jpg
+#G1082,W/B,#8-18,G1082 White-blk Dot_back_wm.jpg
+#G1082,WHT/LV,#8-18,G1082 White-lav_1_wm.jpg
+#G1082W,W/B,#14W-24W,G1082 White-blk Dot_back_wm.jpg
+#G1082W,WHT/LV,#14W-24W,G1082 White-lav_1_wm.jpg
+#G1083,LAV,#8-18,N/A
+#G1083,WHT,#8-18,N/A
+#G1083W,LAV,#14W-26W,N/A
+#G1083W,WHT,#14W-26W,N/A
+#G1084,LEMON,#8-18,N/A
+#G1084,LILAC,#8-18,N/A
+#G1084,WHT,#8-18,N/A
+#G1084W,LEMON,#14W-24W,N/A
+#G1084W,LILAC,#14W-24W,N/A
+#G1084W,WHT,#14W-24W,N/A
+#G1085,MINT,#8-18,N/A
+#G1085,WHT,#8-18,N/A
+#G1085W,MINT,#14W-24W,N/A
+#G1085W,WHT,#14W-24W,N/A
+#G1086,INDIGOBLUE,#8-18,N/A
+#G1086W,INDIGOBLUE,#14W-24W,N/A
+#G1087,LAV,#8-18,N/A
+#G1087,WHT,#8-18,N/A
+#G1087W,LAV,#14W-24W,N/A
+#G1087W,WHT,#14W-24W,N/A
+#G1088,BLK,#8-18,G1088 Black_wm.jpg
+#G1088,CHAM,#8-18,G1088 Champagne_wm.jpg
+#G1088,NAVY,#8-18,G1088 Navy_wm.jpg
+#G1088,SIL,#8-18,G1088 Silver_back_wm.jpg
+#G1088,WHT,#8-18,G1088 White_wm.jpg
+#G1088W,BLK,#14W-26W,G1088 Black_wm.jpg
+#G1088W,CHAM,#14W-26W,G1088 Champagne_wm.jpg
+#G1088W,NAVY,#14W-26W,G1088 Navy_wm.jpg
+#G1088W,SIL,#14W-26W,G1088 Silver_back_wm.jpg
+#G1088W,WHT,#14W-26W,G1088 White_wm.jpg
+#G1090,CRAN,#8-18,N/A
+#G1090,NAVY,#8-18,N/A
+#G1090W,CRAN,#14W-24W,N/A
+#G1090W,NAVY,#14W-24W,N/A
+#H0889,AQUABLUE,#OS,H0889 AquaBlue_wm.jpg
+#H0889,CORALPINK,#OS,H0889 Coral Pink_wm.jpg
+#H0907/08,Emerald,#OS,N/A
+#H0910,BLK/WHTDOT,#OS,H0910 Black-wht Dot_wm.jpg
+#HD1326,LEOPARD,#OS,HD1326 Leopard_wm.jpg
+#HD1335,W/B,#OS,HD1335 White-blk_wm.jpg
+#HD1337,MULTI,#OS,HD1337 Multi_wm.jpg
+#HD1338,BLACK/WHT,#OS,HD1338 Black-White_wm.jpg
+#HD1339,GOLD/RYL,#OS,HD1339 Gold-Royal_wm.jpg
+#HD1340,GOLD/RED/BLK,#OS,HD1340 Gold-Red-Black_wm.jpg
+#HD1341,ORGMULTI,#OS,HD1341 Orange Multi-1_wm.jpg
+#HD1341,SFMMULTI,#OS,HD1341 Sea Foam Multi-1_wm.jpg
+#HD1342,WHT/ROYAL,#OS,HD1342 White-Royal_wm.jpg
+#HD1345,GOLD,#OS,HD1345 Gold_wm.jpg
+#HD1345,SAPPHIRE,#OS,HD1345 Sapphire_wm.jpg
+#HD1345,WHT,#OS,HD1345 White_wm.jpg
+#HD1347,MULTI,#OS,HD1347 Multi_wm.jpg
+#HD1348,MULTI,#OS,HD1348 Multi_wm.jpg
+#HD1349,BLK/PNK,#OS,HD1349 Black-pink_wm.jpg
+#HD1424/58,NAVY,#OS,N/A
+#HD1424/58,PINK,#OS,N/A
+#HD1468/69,GLD/BLK,#OS,N/A
+#HD1491,CHAM,#OS,HD1491 Champ_wm.jpg
+#HD1492,LIMEGREEN,#OS,HD1492 Lime Green_wm.jpg
+#HD1493,SIL,#OS,HD1493 Silver_wm.jpg
+#HD1494,IVY,#OS,HD1494 Ivory_wm.jpg
+#HD1499,CHAM,#OS,HD1499 Champ_wm.jpg
+#HD1502,BLACK/GREEN,#OS,HD1502 Black-green_wm.jpg
+#HD1502,BLK/PNK,#OS,HD1502 Black-pink_wm.jpg
+#HG1007,BLK,#OS,N/A
+#HG1007,CHAM,#OS,HG1007 Champagne_wm.jpg
+#HG1007,Emerald,#OS,HG1007 Emerald_wm.jpg
+#HG1007,IVY,#OS,N/A
+#HG1007,NAVY,#OS,HG1007 Navy_wm.jpg
+#HG1007,SIL,#OS,HG1007 Silver_wm.jpg
+#HG1035,BLK/ROYAL,#OS,HG1035 Black-royal_wm.jpg
+#HG1037/39,EMERALD/WHT,#OS,N/A
+#HG1037/39,GOLD/WHT,#OS,N/A
+#HG1046,PURPLE,#OS,HG1046 Purple_wm.jpg
+#HG1046,TURQ,#OS,HG1046 Turq_wm.jpg
+#HG1059,BLK,#OS,HG1059 Black_wm.jpg
+#HG1059,FUCHSIA,#OS,HG1059 Fuchsia_wm.jpg
+#HG1059,IVY,#OS,N/A
+#HG1060,LAV,#OS,HG1060 Lavender_wm.jpg
+#HG1060,OFFWHT,#OS,HG1060 OffWhite_wm.jpg
+#HG1061,BLUE,#OS,HG1061 Blue_wm.jpg
+#HG1061,SIL,#OS,HG1061 Silver_wm.jpg
+#HG1062,MUSTARD,#OS,HG1062 Mustard_wm.jpg
+#HG1066,FUCHSIA,#OS,HG1066 Fuchsia_wm.jpg
+#HG1066,MUSTARD,#OS,N/A
+#HG1067/68,NAVY,#OS,N/A
+#HG1067/68,PURPLE,#OS,N/A
+#HG1067/68,RED,#OS,N/A
+#HG1069,CINNAMON,#OS,HG1069 Cinnamon_wm.jpg
+#HG1069,IVY,#OS,N/A
+#HG1069,SIL,#OS,HG1069 Silver-Steel_wm.jpg
+#HG1081,BLK,#OS,HG1081 Black_wm.jpg
+#HG1081,MUSTARDGLD,#OS,HG1081 Mustard gold_wm.jpg
+#HG1081,RED,#OS,HG1081 Red_wm.jpg
+#HM1020,BLK,#OS,HM1020 Black_wm.jpg
+#HM1020,WHT,#OS,HM1020 White_wm.jpg
+#HM935,BLK,#OS,HM935 Black_wm.jpg
+#HM935,CHOCO,#OS,HM935 Chocolate_wm.jpg
+#HM935,NAVY,#OS,HM935 Navy_wm.jpg
+#HM935,RYL,#OS,HM935 Royal_wm.jpg
+#HM935,WHT,#OS,HM935 White_wm.jpg
+#HM948,LILAC,#OS,HM948 Lilac_wm.jpg
+#HM948,PASTELGRN,#OS,HM948 Pastel Green_wm.jpg
+#HM948,PINK,#OS,HM948 Pink_wm.jpg
+#HM948,WHT,#OS,HM948 White_wm.jpg
+#HM953,SAPPHIRE,#OS,HM953 Sapphire_wm.jpg
+#HM953,SIL,#OS,N/A
+#HM954,ICEBLUE,#OS,HM954 Ice Blue_wm.jpg
+#HM954,PINK,#OS,HM954 Pink_wm.jpg
+#HM956,PEACOCK,#OS,HM956 Peacock_wm.jpg
+#HM957,PURPLE,#OS,HM957 Purple_wm.jpg
+#HM957,RED,#OS,HM957 Red_wm.jpg
+#HM958,BLUE,#OS,HM958 Blue_wm.jpg
+#HM958,PEACOCK,#OS,HM958 Peacock_wm.jpg
+#HM958,PINK,#OS,HM958 Pink_wm.jpg
+#HM959,Animal,#OS,HM959 Animal_wm.jpg
+#HM960,BLUE,#OS,HM960 Blue_wm.jpg
+#HM960,MAUVE,#OS,HM960 Mauve_wm.jpg
+#HM960,WHT,#OS,HM960 White_wm.jpg
+#HM961,LAV,#OS,HM961 Lavender_wm.jpg
+#HM961,NAVY,#OS,HM961 Navy_wm.jpg
+#HM961,YELLOW,#OS,HM961 Yellow_wm.jpg
+#HM964,LIME,#OS,HM964 Lime_wm.jpg
+#HM965,ICEBLUE,#OS,HM965 IceBlue_wm.jpg
+#HM965,WHT,#OS,HM965 White_wm.jpg
+#HM967,BLK,#OS,HM967 Black_wm.jpg
+#HM967,BLUE,#OS,HM967 Blue_wm.jpg
+#HM967,PINK,#OS,HM967 Pink_wm.jpg
+#HM967,WHT,#OS,HM967 White_wm.jpg
+#HM968,RYL,#OS,HM968 Royal_wm.jpg
+#HM969,W/B,#OS,HM969 White-black_wm.jpg
+#HM970,BLK,#OS,HM970 Black_wm.jpg
+#HM970,RYL,#OS,HM970 Royal_wm.jpg
+#HM970,WHT,#OS,HM970 White_wm.jpg
+#HM971,BLK,#OS,HM971 Black_wm.jpg
+#HM971,PURPLE,#OS,HM971 Purple_wm.jpg
+#HM971,RYL,#OS,HM971 Royal_wm.jpg
+#HR1020,PURPLE,#OS,HR1020 Purple_wm.jpg
+#HR1030,NAVY,#OS,HR1030 Navy_wm.jpg
+#HR1031,GREEN,#OS,HR1031 Green_wm.jpg
+#HR1031,SIL,#OS,HR1031 Silver_wm.jpg
+#HR1031,TURQ,#OS,HR1031 Turq_wm.jpg
+#HR1031,WHT,#OS,HR1031 White_wm.jpg
+#HR1037,BLK,#OS,HR1037 Black_wm.jpg
+#HR1037,CHAM,#OS,HR1037 Champagne_wm.jpg
+#HR1037,NAVY,#OS,HR1037 Navy_wm.jpg
+#HR1037,RED,#OS,HR1037 Red_wm.jpg
+#HR1037,SIL,#OS,HR1037 Silver_wm.jpg
+#HR1037,WHT,#OS,HR1037 White_wm.jpg
+#HR1038,CHAMP/CHOCO,#OS,N/A
+#HR1038,SIL/ST,#OS,HR1038 Silver-Steel_wm.jpg
+#HR1040,EMERALD/WHT,#OS,N/A
+#HR1053,BLK,#OS,HR1053 Black_wm.jpg
+#HR1053,PURPLE,#OS,HR1053 Purple_wm.jpg
+#HR1055,CHAM,#OS,HR1055 Champagne_wm.jpg
+#HR1055,CHOCO,#OS,HR1055 Chocolate_wm.jpg
+#HR1055,IVY,#OS,HR1055 Ivory_wm.jpg
+#HR1055,SIL,#OS,HR1055 Silver_wm.jpg
+#HR1056,CRAN,#OS,HR1056 Cranberry_wm.jpg
+#P1011,PINK,"#M,L,XL,1X,2X",P1011 Pink_wm.jpg
+#P1011,WHT,"#M,L,XL,1X,2X",P1011 White_wm.jpg
+#P1012,GREEN,#OS,P1012 Green_wm.jpg
+#P1012,RED/BLUE/YEL,#OS,P1012 Red-blue-yellow_1_wm.jpg
+#P1013,BLACK/WHT,#XL-2X,P1013 Black-wht_1_wm.jpg
+#P1013,BLK/RED,"#M,L,XL,1X,2X",P1013 Black-red_wm.jpg
+#P1013,RAINBOW,"#M,L,XL,1X,2X",P1013 Rainbow_wm.jpg
+#P1014,DENIM,"#M-1X,2X-4X",P1014 Denim_Skirt Only_wm.jpg
+#P1016,DENIM/ORG,"#M-1X,2X-4X",P1016 Denim-orange_wm.jpg
+#P27759,PEACH,#8-18,N/A
+#P27759W,PEACH,#16W-26W,N/A
+#PS1701,PINK,"#M,L,XL,1X,2X",PS1701 Pink_wm.jpg

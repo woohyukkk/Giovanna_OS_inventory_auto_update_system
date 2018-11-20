@@ -2,7 +2,7 @@ import dropbox
 import csv
 
 
-mode='D'
+mode='H'
 
 accessToken='g4xbkHKkKwAAAAAAAAACqwCjEAwcxfUzjS_kyjInXWmBR609R6AlRASjsWNNnogx'
 
@@ -14,7 +14,7 @@ list=[]
 
 n1=0
 n2=0
-for entry in dbx.files_list_folder('/style library/'+mode+' Styles/watermark/').entries:
+for entry in dbx.files_list_folder('/style library/'+mode+' Styles/White Background/').entries:
     #print(entry.path_lower)
     link=dbx.sharing_create_shared_link(entry.path_lower)
     URL=link.url
@@ -25,7 +25,7 @@ for entry in dbx.files_list_folder('/style library/'+mode+' Styles/watermark/').
     else:
       color=filename[filename.find(' '):filename.find('.jpg')]
 
-    if filename.count('_')>1:#if back pic
+    if filename.count('_')>0:#if back pic
       s=filename.find('_')
       #print (s+1,filename.find('_wm'))
       index=filename[s+1:filename.find('_wm')]
