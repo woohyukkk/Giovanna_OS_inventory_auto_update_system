@@ -1,6 +1,7 @@
 #!/usr/bin/python
-#v3.0 check for ATS, OS JCP, OS Marketing, Shopify Online Store inventory updating
+#v3.1 check for ATS, OS JCP, OS Marketing, Shopify Online Store inventory updating
 # auto detect ATS sizeN,atsN
+# auto detect WIP and use qtyN from atsN
 
 import csv
 import smtplib
@@ -186,11 +187,103 @@ def UpdateOS_Market(ATS):
               print (name+": ",num,"----->"+str(v))
               wcount+=1
               addCount=addCount+v
-              writer.writerow({'Supplier Sku':osCode, 'Quantity':v,'Warehouse Name':'Waitex' })
+              writer.writerow({'Supplier Sku':osCode, 'Quantity':v,'Warehouse Name':'Waitex Warehouse' })
         else:
            print (osCode+" cant find in ATS: 0 -----> 0",name)
            noMatch+=1
-           writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex' })
+           writer.writerow({'Supplier Sku':osCode, 'Quantity':'0','Warehouse Name':'Waitex Warehouse' })
+    f.close()
+    fo.close()
+    print ("OS total wrote:",wcount,"skipped:",skip,"Ats no match:",noMatch, "and",addCount,"items added.\n\n")
+    return  
+
+def UpdateAMZ(ATS):
+    print ('####################AMAZON file updating####################')
+    wcount=0
+    addCount=0
+    skip=0
+    noMatch=0
+    fo= open('./upload/output_AMZ.csv',"w",newline='') 
+    fieldnames=['Seller SKU','Product ID','Item name (aka Title)','Standard Price','Quantity','Condition Type','Offer Condition Note']	
+    writer=csv.DictWriter(fo,fieldnames=fieldnames)
+    writer.writeheader()
+    f= open('Amz_checklist.csv',"r")  
+    look=csv.reader(f)
+    for item in look:
+        osCode=item[0]
+        code=item[1]
+        color=item[2]
+        color2=item[3]
+        id    =item[4]
+        size= item[0]
+        n=size.rfind('-',0,len(size))
+        size=size[n+1:len(size)]
+		
+        if code=='WINFA CODE':
+           continue
+        elif code=='':
+           print (osCode+" skiped: 0 -----> 0")
+           skip+=1
+           writer.writerow({'Seller SKU':osCode, 'Quantity':'0','Product ID':id })
+           continue
+        if (code[0]=='H'):     #is hat
+           name=code+"-"+color+"-"+"OS"
+           name2=''
+        else:
+           name=code+"-"+color+"-"+size
+           name2=code+"-"+color2+"-"+size
+        if ('0'+name)in ATS:
+           name='0'+name
+        if ('0'+name2)in ATS:
+           name2='0'+name2
+        if (name in ATS) :
+              num=ATS[name]
+              num=int(num)
+              if '#'in name2:
+                if name2 in ATS:
+                  num2=ATS[name2]
+                  num2=int(num2) 
+                  print ('*'+name+" + "+color2+"----->" ,num, " + " ,num2)
+                  num=num+num2
+                else:
+                  print (name2+" does not exist!")
+              v=0
+              if num>=1 and num<=3:
+                 v=1
+              elif (num>3 and num < 11):
+                 v=2
+              elif (num > 10):
+                 v=3
+              print (name+": ",num,"----->"+str(v))
+              wcount+=1
+              addCount=addCount+v
+              writer.writerow({'Seller SKU':osCode, 'Quantity':v,'Product ID':id  })
+        elif (name2 in ATS) :
+              num=ATS[name2]
+              num=int(num)
+              if '#'in name2:
+                if name2 in ATS:
+                  num2=ATS[name2]
+                  num2=int(num2) 
+                  print ('*'+name+" + "+color2+"----->" ,num, " + " ,num2)
+                  num=num+num2
+                else:
+                  print (name2+" does not exist!")
+              v=0
+              if num>=2 and num<=3:
+                 v=1
+              elif (num>3 and num < 11):
+                 v=2
+              elif (num > 10):
+                 v=3
+              print (name+": ",num,"----->"+str(v))
+              wcount+=1
+              addCount=addCount+v
+              writer.writerow({'Seller SKU':osCode, 'Quantity':v,'Product ID':id  })
+        else:
+           print (osCode+" cant find in ATS: 0 -----> 0",name)
+           noMatch+=1
+           writer.writerow({'Seller SKU':osCode, 'Quantity':'0','Product ID':id })
     f.close()
     fo.close()
     print ("OS total wrote:",wcount,"skipped:",skip,"Ats no match:",noMatch, "and",addCount,"items added.\n\n")
@@ -313,15 +406,30 @@ for item in look:
     size=[]
     qty=[]
     style=(item[0])
-    for n in range(70):
+    color=(item[1])
+    for n in range(len(item)):
        if item[n]=='size1':
           sizeN=n
        if item[n]=='ats1':
           atsN=n
-
+       if item[n]=='qty1':
+          qtyN=n
+       if item[n]=='wip':
+          wipN=n
+       if item[n]=='nowip_ats1':
+          nwipATS=n
     if style == 'code':
        continue
-    color=(item[1])
+    elif '0825' in style: # FOR JCP 0825
+       nwipATS=qtyN
+    if item[wipN]!='0':
+       wipNum=item[wipN][0:item[wipN].find('.')]
+    else:
+       wipNum='0'
+    if int(wipNum)>0:
+       print ('WIP--->',wipNum,style,color)
+       atsN=qtyN
+
     cate=item[6]
     des=item[2]
     size.append(item[sizeN])
@@ -337,18 +445,18 @@ for item in look:
     size.append(item[sizeN+10])
     size.append(item[sizeN+11])
 
-    qty.append(item[atsN])
-    qty.append(item[atsN+1])
-    qty.append(item[atsN+2])
-    qty.append(item[atsN+3])
-    qty.append(item[atsN+4])
-    qty.append(item[atsN+5])
-    qty.append(item[atsN+6])
-    qty.append(item[atsN+7])
-    qty.append(item[atsN+8])
-    qty.append(item[atsN+9])
-    qty.append(item[atsN+10])
-    qty.append(item[atsN+11])
+    qty.append(item[nwipATS])
+    qty.append(item[nwipATS+1])
+    qty.append(item[nwipATS+2])
+    qty.append(item[nwipATS+3])
+    qty.append(item[nwipATS+4])
+    qty.append(item[nwipATS+5])
+    qty.append(item[nwipATS+6])
+    qty.append(item[nwipATS+7])
+    qty.append(item[nwipATS+8])
+    qty.append(item[nwipATS+9])
+    qty.append(item[nwipATS+10])
+    qty.append(item[nwipATS+11])
 
 
     #print (style,color,size)
@@ -358,7 +466,9 @@ for item in look:
         key = style+"-"+color+"-"+str(size[i])
         Qty = qty[i]
         #print (Qty,Qty.find('.'),Qty[0:Qty.find('.')])
-        if Qty!='0':
+
+        if Qty!='0' and '.' in Qty:
+           #print (Qty)
            Qty=Qty[0:Qty.find('.')]
         print("ATS: "+key+" <= "+Qty)
         if int(Qty)<0:
@@ -380,7 +490,8 @@ UpdateOS(ATS)
 UpdateOS_Market(ATS)
 UpdateJCP(ATS)
 #shopify_import(ATS0)
-UpdateShopify(ATS)
+#UpdateShopify(ATS)
+UpdateAMZ(ATS)
 if len(negativeList)>0:
   print ("############################################## Negative List Report ##################################################")
   for item,v in negativeList.items():
