@@ -42,52 +42,35 @@ def watermark_text(input_image_path,output_image_path,text, pos):
     #photo.show()
     photo.save(output_image_path)
 
-def getPC(style):
-    if style[0]=='0':
-       style=style[1:]
-    n='not found'
-    #print('Finding PCn.')
-    f= open('STYLE DATA.csv',"r")  
-    look=csv.reader(f)
-    for item in look:
-     PCn=item[7]
-     code=item[0]
-     if code=='0711A' or code=='711A':
-        code='711'
-     #print (code,"----------",style)
-     if code==style:
-      #print (code,PCn)
-      if '1'in PCn:
-        n='1 pc dress'
-        #print ('1--->PC')
-      elif '2' in PCn:
-        n='2 pc set'
-        #print ('2--->PC')
-      elif '3' in PCn:
-        n='3 pc set'
-        #print ('3--->PC')
-    #print ('return:',n)
-    return n
 
 def loadPC(data):
+    data['0921']='2 pc\n long coat+dress'
+    data['D1351']='2 pc top+dress'
     f= open('STYLE DATA.csv',"r")  
     look=csv.reader(f)
     for item in look:
-     PCn=item[7]
+     jkt=0
+     PCn=item[7].upper()
+     type=item[8].upper()
      code=item[0]
-     if '1'in PCn:
+     if 'JK' in PCn or 'JK' in type:
+        jkt=1
+     if '1'in PCn[0:8]:
          if code[0]=='P':
            PCn='1 pc skirt'
          else:
            PCn='1 pc dress'
         #print ('1--->PC')
-     elif '2' in PCn:
+     elif '2' in PCn[0:8]:
         PCn='2 pc set'
         #print ('2--->PC')
-     elif '3' in PCn:
+     elif '3' in PCn[0:8]:
         PCn='3 pc set'
      if code=='0711A' or code=='711A':
-        code='711'
+        code='0711'
+     if jkt==1:
+        print ('jkt<-------------')
+        PCn = PCn.replace('set','jkt dress')
      if code not in data:
         data[code]=PCn
 
@@ -150,6 +133,8 @@ for filename in os.listdir(waterMarkPath):
          #print ('2--->PC')
         elif '3' in PCn:
          PCn='3 pc set'
+        elif 'JK' in PCn:
+         PCn='2 pc jkt dress'
         if style[0]!='H':
           StyleData[style]=PCn
       print (count,style,color,PCn)

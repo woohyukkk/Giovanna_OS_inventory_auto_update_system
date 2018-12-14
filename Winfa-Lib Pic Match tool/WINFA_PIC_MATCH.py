@@ -94,6 +94,7 @@ def findSizes(div):
 
 def searchIMG(style , color, div, writer):
     style=style.replace('A','')
+    style=style.replace('/','-')
     color= color.replace(' ','')
     if '#' in color:
        color=color[0:color.find('#')]
@@ -111,6 +112,7 @@ def searchIMG(style , color, div, writer):
               outList.append(style+color)
               writer.writerow({'style':'#'+style,'color':color, 'sizes':'#'+findSizes(div),'image file':filename })
            flag=1
+           break
         else:
            co=''
            #print(style,color,'<---------------No file')
@@ -119,7 +121,7 @@ def searchIMG(style , color, div, writer):
        if style+color not in outList:
           outList.append(style+color)
           writer.writerow({'style':'#'+style,'color':color, 'sizes':'#'+findSizes(div),'image file':'N/A' })
-f= open('ATSWIP.csv',"r")  
+f= open('Z:/Zoe/ATS/ATSWIP.csv',"r")  
 look=csv.reader(f)
 ATS={}
 ATS0=[]
