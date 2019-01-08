@@ -152,7 +152,7 @@ def UPC_loader():
 
 UPClib={}
 UPClib=UPC_loader()
-f= open('dataOS_2.csv',"r")  
+f= open('dataOS.csv',"r")  
 look=csv.reader(f)
 styleLib={}
 for item in look:
@@ -218,7 +218,7 @@ for item in styleLib.items():
           style='#'+style
        print ('writing.....',style,sku,upc,title)
        writer.writerow({'Style':style, 'Supplier SKU':sku,'UPC':'#'+upc,'Title':title,'Description':dec,'Size':size,'Color':color})
-#print (styleLib) 
+print (styleLib) 
 #print (ATS0)
 for list in ATS0:
    style=list[0]

@@ -45,7 +45,10 @@ def watermark_text(input_image_path,output_image_path,text, pos):
 
 def loadPC(data):
     data['0921']='2 pc\n long coat+dress'
-    data['D1351']='2 pc top+dress'
+    data['D1351']='2 pc top+skirt'
+    data['0915']='2 pc long\n coat+dress'
+    data['D1510']='2 pc cape+dress'
+    data['G1090']='2 pc jkt+dress'
     f= open('STYLE DATA.csv',"r")  
     look=csv.reader(f)
     for item in look:
@@ -55,7 +58,9 @@ def loadPC(data):
      code=item[0]
      if 'JK' in PCn or 'JK' in type:
         jkt=1
-     if '1'in PCn[0:8]:
+     if 'MOCK 2 PC' in PCn:
+        PCn='1 pc dress'
+     elif '1'in PCn[0:8]:
          if code[0]=='P':
            PCn='1 pc skirt'
          else:
@@ -66,6 +71,8 @@ def loadPC(data):
         #print ('2--->PC')
      elif '3' in PCn[0:8]:
         PCn='3 pc set'
+     else:
+        PCn='1 pc dress'
      if code=='0711A' or code=='711A':
         code='0711'
      if jkt==1:
@@ -101,6 +108,7 @@ for filename in os.listdir(waterMarkPath):
       name=filename[s0+1:]
       s1=name.find('.jpg')
       color=name[0:s1]
+      color=color.replace('-','/')
       if '_'in color:
         s2=color.find('_')
         color=color[0:s2]
@@ -112,7 +120,6 @@ for filename in os.listdir(waterMarkPath):
       else:
         PCn='not found'
         print (style,'not found <-----------------------------------------------')
-
       if PCn=='not found' or PCn=='':
         print (style,'not found <-----------------------------------------------')
         nf+=1

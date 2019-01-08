@@ -136,7 +136,7 @@ def ATS_loader():
 ATS0=ATS_loader()
 UPClib={}
 
-f= open('SKU-UPClib.csv',"r")  
+f= open('output.csv',"r")  
 look=csv.reader(f)
 styleLib={}
 for item in look:
