@@ -49,7 +49,7 @@ def loadPC(data):
     data['0915']='2 pc long\n coat+dress'
     data['D1510']='2 pc cape+dress'
     data['G1090']='2 pc jkt+dress'
-    f= open('STYLE DATA.csv',"r")  
+    f= open('Z:/Zoe/ATS/ALL STYLES.csv',"r")  
     look=csv.reader(f)
     for item in look:
      jkt=0
@@ -58,7 +58,7 @@ def loadPC(data):
      code=item[0]
      if 'JK' in PCn or 'JK' in type:
         jkt=1
-     if 'MOCK 2 PC' in PCn:
+     elif 'MOCK 2 PC' in PCn:
         PCn='1 pc dress'
      elif '1'in PCn[0:8]:
          if code[0]=='P':
@@ -71,6 +71,8 @@ def loadPC(data):
         #print ('2--->PC')
      elif '3' in PCn[0:8]:
         PCn='3 pc set'
+     elif PCn=='':
+          PCn='not found'
      else:
         PCn='1 pc dress'
      if code=='0711A' or code=='711A':

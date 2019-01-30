@@ -3,47 +3,27 @@ import csv
 count=0
 
 fo= open('output.csv',"w",newline='') 
-fieldnames=['style','color','size']	
+fieldnames=['style']	
 writer=csv.DictWriter(fo,fieldnames=fieldnames)
 writer.writeheader()
 
-f= open('DATA.csv',"r")  
+key=[]
+f= open('key.csv',"r")  
 look=csv.reader(f)
-data={}
+
 for item in look:
-    c=0
-    if item[0]=='' or item[0]=='style':
-       continue
-    style = item[0]
-    color = item[1]
-    color=color.replace('-','/')
-    if len(style)==3:
-       style='#0'+style
-    list=[]
-    list.append(color.upper())
-    if style not in data:
-       data[style]=list
+    key.append(item[0])
+    #print ('key<==',item[0])
+
+f= open('input.csv',"r")  
+look=csv.reader(f)
+n=0
+for item in look:
+    code=item[2]
+    if code in key:
+       n+=1
+       writer.writerow({'style':'DEL'})
+       print (code,'found')
     else:
-       data[style].append(color.upper().replace(' ',''))
-
-
-for style,list in data.items():
-    colors=''
-    f=0
-    for item in list:
-        colors=colors+item+', '
-    colors=colors[0:len(colors)-2]
-    for item in list:
-        f1= open('input.csv',"r")  
-        look=csv.reader(f1)
-        for item in look:
-            if item[0] == style or '#'+item[0] == style :
-               print('match',item[0],style)
-               f=1
-        if f==1:
-           print (style, colors)
-           writer.writerow({'style':style,'color':colors})
-
-
-
-       
+       writer.writerow({'style':code})
+print ('Total found:',n)
