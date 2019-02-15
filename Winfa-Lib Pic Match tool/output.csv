@@ -127,9 +127,9 @@ style,color,sizes,image file
 #0903,WHT,#8-18,0903 White_wm.jpg
 #0903W,BLK,#14W-24W,0903 Black_wm.jpg
 #0903W,WHT,#14W-24W,0903 White_wm.jpg
-#0906,W/N,#10-18,0906 White-navy_wm.jpg
+#0906,W/N,#10-18,0906 White-navy_cami_wm.jpg
 #0906,WHT/TURQ,#10-18,0906 White-turq_back_wm.jpg
-#0906W,W/N,#14W-26W,0906 White-navy_wm.jpg
+#0906W,W/N,#14W-26W,0906 White-navy_cami_wm.jpg
 #0906W,WHT/TURQ,#14W-26W,0906 White-turq_back_wm.jpg
 #0907,Emerald,#10-18,0907 Emerald_back_wm.jpg
 #0907W,CHAM,#14W-26W,0907 Champagne_wm.jpg
@@ -165,7 +165,7 @@ style,color,sizes,image file
 #0924V,WHT,#8-18,N/A
 #0924VW,WHT,#14W-24W,N/A
 #D1318,FUCHSIA/RYL,"#M,L,XL,1X,2X",D1318 Fuchsia-royal_back_wm.jpg
-#D1319,BLUE,#N/A,D1319 Blue_wm.jpg
+#D1319,BLUE,#N/A,N/A
 #D1319,PURPLE,#N/A,D1319 Purple_wm.jpg
 #D1320,MUSTARD/GLD,#XL-2X,D1320 Mustard-gold_wm.jpg
 #D1320,OLIVE/BLK,#XL-2X,D1320 Olive-blk_wm.jpg
@@ -219,10 +219,10 @@ style,color,sizes,image file
 #D1342W,WHT/ROYAL,#14W-26W,D1342 White-royal_back_wm.jpg
 #D1343W,WHT,#14W-28W,D1343 White_1_wm.jpg
 #D1344,GLD/BLK,#6-18,D1344 Gold-blk_1_wm.jpg
-#D1344,RED,#6-18,D1344 Red_wm.jpg
+#D1344,RED,#6-18,D1344 Red_1_wm.jpg
 #D1344,WHT01,#6-18,N/A
 #D1344W,GLD/BLK,#14W-26W,D1344 Gold-blk_1_wm.jpg
-#D1344W,RED,#14W-26W,D1344 Red_wm.jpg
+#D1344W,RED,#14W-26W,D1344 Red_1_wm.jpg
 #D1344W,WHT01,#14W-28W,N/A
 #D1345,SAPPHIRE,#10-18,D1345 Sapphire_1_wm.jpg
 #D1345,WHT,#10-18,D1345 White_wm.jpg

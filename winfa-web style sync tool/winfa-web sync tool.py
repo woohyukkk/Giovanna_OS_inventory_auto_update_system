@@ -1,6 +1,6 @@
 import csv
 import sys 
-import winfaColorMatch
+import winfa
 
 #input: Z:/Zoe/ATS/ATS.csv, Z:/Zoe/ATS/products_export.csv
 
@@ -111,7 +111,7 @@ def getSC(item):
     else:
        print ('SC not found',item)
        return
-    result=winfaColorMatch.Aloc(style,color)
+    result=winfa.Aloc(style,color)
     if result !=[]:
        return result
     else:
@@ -121,7 +121,7 @@ def getSC(item):
        else:
           color=item[s0+1:]
        print ('search new color.....',color)
-       result=winfaColorMatch.Aloc(style,color)
+       result=winfa.Aloc(style,color)
        return result
 def print_Nodec():
     noDecList.sort()

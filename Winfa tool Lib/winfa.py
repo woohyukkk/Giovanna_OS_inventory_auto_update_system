@@ -402,12 +402,15 @@ def getBreakDown(style):
               outputList[color0]
     if (existF==0):
        print ('ERR:',style,'not found')
+       return -1
     return outputList
 
 def getATS():
    load_ATS()
    for list in ATS0:
        print ('ATS:',list)
+   return ATS0
+
 
 def getQty(sku): #SKU: xxxx-xxx-xxx
     initialLoad()
@@ -469,10 +472,6 @@ def ATS_comboLot(ATS):
        #print ('DEL',item)
 if __name__ == '__main__':
    print ('HW')
-   print(getQty('0655-NAVY-10'))
-   print(getQty('0655-NAVY-10'))
-   print(getQty('0655-NAVY-10'))
-   print(getQty('0655-NAVY-10'))
-
+   print (getBreakDown('0301'))
 
 

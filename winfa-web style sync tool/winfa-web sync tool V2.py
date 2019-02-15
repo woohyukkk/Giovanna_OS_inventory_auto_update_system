@@ -1,6 +1,6 @@
 import csv
 import sys 
-import winfaColorMatch
+import winfa
 
 #input: Z:/Zoe/ATS/ATS.csv, Z:/Zoe/ATS/products_export.csv
 
@@ -108,7 +108,7 @@ def getSC(item):
     else:
        print ('SC not found',item)
        return -1
-    result=winfaColorMatch.Aloc(style,color)
+    result=winfa.Aloc(style,color)
     if result!=[]:
        return 1
 
