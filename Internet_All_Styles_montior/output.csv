@@ -1,0 +1,213 @@
+Style,UpdateOS,UpdateOSM,UpdateJCP,Check,ATS,OS,OSM,JCP
+'0650,"['BLK', 'CHOCO', 'RYL', 'SIL', 'WHT']",N/A,"['BLK', 'CHOCO', 'WHT']",P,"['BLK', 'CHOCO', 'RYL', 'SIL', 'WHT']","['Black', 'Choco', 'Fuchsia', 'Royal', 'Silver', 'White']", N/A,"['BLACK', 'CHOCOLATE', 'WHITE']"
+'0652,N/A,"['BLK', 'Emerald', 'RED']",N/A,P,"['BLK', 'EMERALD', 'RED']", N/A,"['BLK', 'EMERALD', 'RED']", N/A
+'0653,N/A,"['BLK', 'WHT']",N/A,P,"['BLK', 'WHT']", N/A,"['BLACK', 'WHITE']", N/A
+'0654,"['BLK', 'RED', 'RYL']",N/A,"['BLK', 'WHT']",P,"['PURPLE', 'RED', 'RYL']","['Black', 'Pur', 'Red', 'Royal', 'White']", N/A,"['BLACK', 'WHITE']"
+'0655,"['BLK', 'NAVY', 'RYL', 'WHT']",N/A,N/A,P,"['BLK', 'NAVY', 'RYL', 'WHT']","['Black', 'Navy', 'Ryl', 'White']", N/A, N/A
+'0707,N/A,['WHT'],N/A,P,['WHT'], N/A,['WHT'], N/A
+'0708,"['BLK', 'NAVY', 'WHT']",N/A,N/A,P,"['BLK', 'NAVY', 'WHT']","['BLK', 'NAVY', 'WHT']", N/A, N/A
+'0709,"['BLK', 'EMERALD', 'RED']","['BLK', 'Emerald', 'RED']",N/A,P,"['BLK', 'EMERALD', 'RED']","['BLK', 'Chocolate', 'Emerald', 'Ivory', 'Navy', 'Red', 'RED', 'Turq', 'White']","['BLK', 'Emerald', 'RED']", N/A
+'0710,"['BLK', 'CHOCO', 'IVY', 'NAVY', 'RYL', 'WHT']",N/A,N/A,P,"['BLK', 'CHOCO', 'IVY', 'NAVY', 'RYL', 'WHT']","['Black', 'Chocolate', 'Ivory', 'Navy', 'Royal', 'Choco', 'White']", N/A, N/A
+'0823,"['BLK', 'CHOCO', 'NAVY', 'PURPLE', 'RED', 'RYL', 'SIL', 'WHT']",N/A,N/A,P,"['BLK', 'CHOCO', 'NAVY', 'PURPLE', 'RED', 'RYL', 'SIL', 'WHT']","['Black', 'Choco', 'Navy', 'Purple', 'Red', 'Royal', 'Silver', 'Chocolate', 'White']", N/A, N/A
+'0824,"['', 'CRAN', 'RYL', 'WHT']",N/A,N/A,P,"['BLK', 'CRAN', 'PLUM', 'RYL', 'SIL', 'WHT']","['Black', 'Cranberry', 'Plum', 'Royal', 'Silver', 'White']", N/A, N/A
+'0825,[''],N/A,"['BLK', 'CHOCO', 'WHT']",P,"['BLK', 'CHOCO', 'WHT']","['Black', 'Choco', 'White']", N/A,"['BLACK', 'CHOCO', 'WHITE']"
+'0826,[''],['BLK'],N/A,P,['BLK'],['BLK'],['BLK'], N/A
+'0867,"['', 'CHOCO']",N/A,N/A,X,"['BLK', 'CHOCO', 'WHT']","['Black', 'Choco', 'White']", N/A, N/A
+'0875,[''],N/A,N/A,X,"['LAV', 'PEACOCK']","['Black', 'Lavender', 'Peacock', 'Purple', 'Red', 'White']", N/A, N/A
+'0888,N/A,N/A,N/A,X,['SAPP/TEAL'], N/A, N/A, N/A
+'0889W,"['', 'AQUA BLUE', 'CORAL PINK']",N/A,N/A,X,['WHT'],"['Aqua Blue', 'Coral Pink', 'Red', 'Sapphire', 'Silver', 'White']", N/A, N/A
+'0898W,N/A,N/A,N/A,X,['SFM'], N/A, N/A, N/A
+'0901,N/A,N/A,N/A,X,"['CHAM', 'IVY', 'WHT', 'BLK']", N/A, N/A, N/A
+'0903,"['BLK', 'WHT']","['BLK', 'WHT']",N/A,P,"['BLK', 'WHT']","['BLK', 'WHT']","['BLK', 'WHT']", N/A
+'0907,"['CHAM', 'Emerald']",N/A,N/A,P,"['EMERALD', 'CHAM']","['Champ', 'Emerald']", N/A, N/A
+'0908,"['CHAM', 'Emerald']",N/A,N/A,P,"['EMERALD', 'CHAM']","['Champ', 'Emerald']", N/A, N/A
+'0910,[''],['BLK/WHT DOT'],N/A,X,"['BLK/WHT DOT', 'CORAL/WHT']",['BLK/WHT'],['BLK/WHT'], N/A
+'0912,N/A,"['BLUE', 'WHT']",N/A,P,"['BLUE', 'WHT']", N/A,"['BLUE', 'WHT']", N/A
+'0914,N/A,"['WHT', 'YELLOW']",N/A,P,"['WHT', 'YELLOW']", N/A,"['WHT', 'YELLOW']", N/A
+'0914VW,N/A,N/A,N/A,X,['BLUE'], N/A, N/A, N/A
+'0915,N/A,N/A,N/A,X,"['BLUE', 'WHT', 'YELLOW']", N/A, N/A, N/A
+'0918,['NAVY'],N/A,N/A,P,['NAVY'],['Navy'], N/A, N/A
+'0919,N/A,"['BLK', 'FUCHSIA', '919']",N/A,P,"['BLK', 'FUCHSIA']", N/A,"['BLK', 'FUCHSIA']", N/A
+'0920,N/A,"['BLK', 'WHT']",N/A,P,"['BLK', 'WHT']", N/A,"['BLK', 'WHT']", N/A
+'0921W,N/A,"['BLK', 'WHT']",N/A,P,['WHT'], N/A,"['BLK', 'WHT']", N/A
+'0927,N/A,N/A,N/A,X,"['O.BLUE', 'VIOLET']", N/A, N/A, N/A
+'0928,N/A,N/A,N/A,X,"['O.BLUE', 'VIOLET']", N/A, N/A, N/A
+'0929,N/A,N/A,N/A,X,"['HP', 'TURQ', 'WHT']", N/A, N/A, N/A
+'0930,N/A,N/A,N/A,X,"['IVY', 'ORG RED']", N/A, N/A, N/A
+'D1318,N/A,N/A,N/A,X,['FUCHSIA/RYL'], N/A, N/A, N/A
+'D1319,N/A,N/A,N/A,X,"['BLUE', 'PURPLE']", N/A, N/A, N/A
+'D1320,N/A,N/A,N/A,X,"['MUSTARD/GLD', 'OLIVE/BLK', 'RYL']", N/A, N/A, N/A
+'D1321,N/A,N/A,N/A,X,"['BLK', 'WHT']", N/A, N/A, N/A
+'D1323,N/A,N/A,N/A,X,"['SIL', 'WHT']", N/A, N/A, N/A
+'D1324,N/A,N/A,N/A,X,['DENIM DOT'], N/A, N/A, N/A
+'D1325,[''],N/A,N/A,X,['DENIM DOT'],['DENIM DOT'], N/A, N/A
+'D1326,N/A,N/A,N/A,X,['WHT'], N/A, N/A, N/A
+'D1326P,N/A,N/A,N/A,X,"['BLUE PRT', 'YEL PRT']", N/A, N/A, N/A
+'D1327,N/A,N/A,N/A,X,"['GREEN', 'GREEN/PINK', 'GREEN/YEL', 'RYL']", N/A, N/A, N/A
+'D1329,N/A,N/A,N/A,X,"['CORAL PINK', 'WHT']", N/A, N/A, N/A
+'D1331,N/A,N/A,N/A,X,"['RAINBOW', 'RED']", N/A, N/A, N/A
+'D1332,N/A,N/A,N/A,X,"['BLACK/WHT', 'BLK/BLK', 'WHT/WHT']", N/A, N/A, N/A
+'D1333,N/A,N/A,N/A,X,"['IVY', 'LAV', 'NAVY']", N/A, N/A, N/A
+'D1334W,N/A,N/A,N/A,X,"['NAVY', 'PURPLE']", N/A, N/A, N/A
+'D1336W,[''],N/A,N/A,X,['W/B'],['Wht/blk'], N/A, N/A
+'D1338,['BLACK/WHT'],[''],N/A,P,['BLACK/WHT'],['Black/wht'],['BLACK/WHT'], N/A
+'D1339,['GOLD/RYL'],N/A,N/A,P,['GOLD/RYL'],['Gold/ryl'], N/A, N/A
+'D1340,[''],N/A,N/A,X,['GOLD/RED/BLK'],['Gld/rd/bk'], N/A, N/A
+'D1341,N/A,N/A,N/A,X,"['SFM MULTI', 'ORG MULTI']", N/A, N/A, N/A
+'D1342,"['BLK/RED', 'WHT/ROYAL']",N/A,N/A,P,"['BLK/RED', 'WHT/ROYAL']","['BLACK', 'Wht/Ryl']", N/A, N/A
+'D1343,['WHT'],N/A,N/A,P,"['O.BLUE', 'VIOLET', 'WHT']",['White'], N/A, N/A
+'D1344,N/A,N/A,N/A,X,"['GLD/BLK', 'RED', 'WHT 01']", N/A, N/A, N/A
+'D1346,N/A,N/A,N/A,X,"['BLK', 'NAVY', 'SIL', 'WHT']", N/A, N/A, N/A
+'D1347,N/A,N/A,N/A,X,['MULTI'], N/A, N/A, N/A
+'D1348,N/A,N/A,N/A,X,['MULTI'], N/A, N/A, N/A
+'D1349,N/A,N/A,N/A,X,['BLK/PNK'], N/A, N/A, N/A
+'D1350,N/A,N/A,N/A,X,['W/B'], N/A, N/A, N/A
+'D1351,N/A,N/A,N/A,X,"['BLK', 'WHT']", N/A, N/A, N/A
+'D1352,N/A,N/A,N/A,X,"['PINK', 'TURQ']", N/A, N/A, N/A
+'D1353,N/A,N/A,N/A,X,"['ICE BLUE', 'WHT']", N/A, N/A, N/A
+'D1354,N/A,N/A,N/A,X,['GLD/VIOLET'], N/A, N/A, N/A
+'D1423,[''],N/A,N/A,X,"['DK. SILVER', 'SIL']","['DkSilver', 'Navy', 'DSilver', 'White']", N/A, N/A
+'D1423B,[''],"['BLK', 'CHAM', 'LT. SILVER']",N/A,P,"['BLK', 'CHAM', 'LT. SILVER']","['Black', 'Champ', 'White']","['BLK', 'CHAM', 'LT. SIL']", N/A
+'D1424,N/A,N/A,N/A,X,"['BLK', 'BURGUNDY', 'CHAM', 'WHT', 'RYL']", N/A, N/A, N/A
+'D1435,[''],N/A,N/A,X,"['BLK', 'LAV', 'PURPLE', 'SAPPHIRE', 'WHT']","['Black', 'Lavender', 'Lilac', 'Purple', 'Sapphire', 'White']", N/A, N/A
+'D1450,[''],N/A,N/A,X,"['IVY', 'PURPLE', 'RYL', 'BLK', 'LIME']","['Black', 'Ivory', 'Royal']", N/A, N/A
+'D1451,[''],N/A,N/A,X,"['BLK', 'CRAN', 'WHT']","['Black', 'Cranberry', 'White']", N/A, N/A
+'D1453,"['', 'ICE BLUE', 'PINK', 'WHT']",N/A,N/A,P,"['ICE BLUE', 'PINK']","['Black', 'Ice Blue', 'Pink', 'White']", N/A, N/A
+'D1455,"['BLK', 'LAV', 'WHT']","['BLK', 'LAV', 'WHT']",N/A,P,"['BLK', 'LAV', 'WHT']","['Black', 'Lav', 'White']","['BLK', 'LAV', 'WHT']", N/A
+'D1457W,[''],N/A,N/A,X,"['WHT/BLUE', 'WHT/PNK']","['White/blue', 'White/pink', 'Wht/blue', 'Wht/pink']", N/A, N/A
+'D1458,[''],"['BURGUNDY', 'GREEN', 'NAVY', 'WHT', 'PINK']",N/A,P,"['BURGUNDY', 'GREEN', 'NAVY', 'PINK', 'WHT']","['Burgundy', 'Green', 'Navy', 'Pink', 'White']","['BURG', 'GREEN', 'NAVY', 'WHT', 'PINK']", N/A
+'D1467W,N/A,N/A,N/A,X,"['LILAC/BLK', 'ORANGE/BLK']", N/A, N/A, N/A
+'D1468,[''],N/A,N/A,X,['WHT'],"['Gld/Blk', 'Red/Blk', 'White']", N/A, N/A
+'D1473,N/A,"['BLK', 'NAVY']",N/A,P,['BLK'], N/A,"['BLK', 'NAVY']", N/A
+'D1474,[''],N/A,N/A,X,"['BLK', 'IVY']","['BLK', 'IVY']", N/A, N/A
+'D1475,N/A,N/A,N/A,X,"['DENIM BLUE', 'KHAKI', 'LAV', 'WHT']", N/A, N/A, N/A
+'D1476,[''],N/A,N/A,X,"['DENIM BLUE', 'LAV']",['LAV'], N/A, N/A
+'D1477,"['PINK', 'WHT']",N/A,N/A,P,"['DENIM BLUE', 'DK. PINK', 'PINK', 'WHT']","['Pink', 'White']", N/A, N/A
+'D1477L,N/A,N/A,N/A,X,"['DENIM', 'WHT']", N/A, N/A, N/A
+'D1479,N/A,N/A,N/A,X,"['BLK', 'BLUE', 'PURPLE']", N/A, N/A, N/A
+'D1482,N/A,N/A,N/A,X,"['WHT', 'YELLOW']", N/A, N/A, N/A
+'D1483,[''],N/A,N/A,X,['BLACK/GREEN'],"['Blk/green', 'White/blk', 'White/lav']", N/A, N/A
+'D1484,[''],N/A,N/A,X,"['LIME', 'LEMON YEL']","['Lemon Yel', 'Lime', 'White']", N/A, N/A
+'D1485,[''],N/A,N/A,X,['ICE BLUE'],"['Dk Lime', 'Ice Blue', 'Rose Pink', 'White']", N/A, N/A
+'D1486,"['NAVY', 'WHT']",N/A,N/A,P,"['NAVY', 'WHT']","['Navy', 'White']", N/A, N/A
+'D1488,['PUR/TURQ'],N/A,N/A,P,['PUR/TURQ'],['Pur/Turq'], N/A, N/A
+'D1489,"['DENIM BLUE', 'PINK']",N/A,N/A,P,"['DENIM BLUE', 'PINK']","['DENIM BLUE', 'PINK']", N/A, N/A
+'D1490,N/A,N/A,N/A,X,['WHT'], N/A, N/A, N/A
+'D1493,N/A,N/A,N/A,X,"['BLK', 'SIL', 'WHT']", N/A, N/A, N/A
+'D1494W,[''],N/A,N/A,X,"['IVY', 'PINK']","['Ivory', 'Pink']", N/A, N/A
+'D1495,"['NAVY', 'WHT']",N/A,[''],P,"['NAVY', 'WHT']","['Navy', 'White']", N/A,"['NAVY', 'WHITE']"
+'D1497W,['LIME GREEN'],N/A,N/A,P,['LIME GREEN'],['LimeGrn'], N/A, N/A
+'D1498,['NAVY'],"['NAVY', 'PUR/GLD', 'RED/BLK']",[''],P,"['NAVY', 'PUR/GLD', 'RED/BLK']",['Navy'],"['NAVY', 'PUR/GLD', 'RED/BLK']",['NAVY']
+'D1499,"['CHAM', 'COPPER', 'WHT']",N/A,N/A,P,"['CHAM', 'WHT']","['Champ', 'Copper', 'White']", N/A, N/A
+'D1500,N/A,N/A,N/A,X,['IVY'], N/A, N/A, N/A
+'D1501,N/A,N/A,N/A,X,['BLK'], N/A, N/A, N/A
+'D1502,N/A,N/A,N/A,X,"['BLK/GRN', 'BLK/PNK']", N/A, N/A, N/A
+'D1503,N/A,N/A,N/A,X,"['A. GRN', 'PURPLE', 'WHT']", N/A, N/A, N/A
+'D1504,N/A,N/A,N/A,X,"['CHAM', 'PINK', 'WHT']", N/A, N/A, N/A
+'D1505,N/A,N/A,N/A,X,['OLIVE'], N/A, N/A, N/A
+'D1506,N/A,N/A,N/A,X,['OLIVE'], N/A, N/A, N/A
+'D1510,N/A,N/A,N/A,X,['WHT'], N/A, N/A, N/A
+'D1511,N/A,N/A,N/A,X,"['ICE BLUE', 'IVY']", N/A, N/A, N/A
+'G0842,N/A,"['WHT/TURQ', 'WHT/YELLOW']",N/A,P,"['WHT/TURQ', 'WHT/YELLOW']", N/A,"['Wht/turq', 'Wht/yel']", N/A
+'G0844,"['BLK', 'CHAM', 'GLD/BLK', 'ICE BLUE', 'IVY', 'SIL', 'WHT']","['CHAM', 'GLD/BLK', 'IVY', 'SIL', 'BLK', 'WHT', 'ICE BLUE']","['BLK', 'ICE BLUE', 'IVY', 'WHT']",P,"['GLD/BLK', 'IVY', 'SIL', 'WHT', 'BLK', 'CHAM', 'ICE BLUE']","['BLK', 'CHAM', 'GLD/BLK', 'ICE BLUE', 'IVY', 'SIL', 'WHT']","['CHAM', 'GLD/BLK', 'IVY', 'SIL', 'BLK', 'WHT', 'ICE BLUE']","['BLACK', 'ICE BLUE', 'IVORY', 'WHITE']"
+'G1007,"['BLK', 'CHOCO', 'Emerald', 'RED', 'PINK', 'WHT', 'SPK', 'GOLD', 'LAV']","['GOLD', 'LAV']","['BLK', 'CHOCO', 'Emerald', 'RED']",P,"['CHOCO', 'GOLD', 'LAV', 'PINK', 'RED', 'WHT', 'BLK']","['Black', 'Chocolate', 'Green', 'IBlue', 'Red', 'SoftPink', 'Choco', 'Emerald', 'White', 'SPink', 'GOLD', 'LAV']","['GOLD', 'LAV']","['BLACK', 'CHOCOLATE', 'EMERALD', 'RED']"
+'G1011,"['CHAM', 'GUNMETAL', 'RED', 'WHT']",N/A,N/A,P,"['CHAM', 'GUNMETAL', 'RED', 'WHT']","['CHAM', 'GUNMETAL', 'RED', 'WHT']", N/A, N/A
+'G1018,"['', 'GINGER']",N/A,"['BLK', 'GINGER', 'NAVY', 'WHT']",P,"['BLK', 'PURPLE', 'CRAN', 'GINGER', 'NAVY', 'SPK', 'WHT']","['Black', 'Cran', 'Ginger', 'Lime', 'Navy', 'Pink', 'Purple', 'Soft Pink', 'Cranberry', 'White']", N/A,"['BLACK', 'GINGER', 'NAVY', 'WHITE']"
+'G1041,N/A,N/A,N/A,X,['PURPLE'], N/A, N/A, N/A
+'G1045,N/A,N/A,N/A,X,"['HOTPINK/BLK', 'LIME/BLK', 'RYL/BLK']", N/A, N/A, N/A
+'G1051,['GOLD'],N/A,N/A,P,"['GREEN', 'GOLD']","['GOLD', 'Green']", N/A, N/A
+'G1055,[''],N/A,N/A,X,['NVY/W'],"['Navy/Wht', 'Pur/Wht']", N/A, N/A
+'G1056,[''],N/A,N/A,X,['PURP/WHITE'],"['Navy/wht', 'Purp/wht']", N/A, N/A
+'G1059,[''],N/A,N/A,X,"['BLK', 'FUCHSIA', 'IVY']","['Black', 'Fuchsia', 'Ivory']", N/A, N/A
+'G1060,[''],N/A,"['LAV', 'OFF WHT']",X,"['LAV', 'OFF WHT', 'YLW GOLD']","['Lavender', 'OffWhite']", N/A,"['LAV', 'OFFWHT']"
+'G1062,"['FUCHSIA', 'MUSTARD']",N/A,['MUSTARD'],P,"['FUCHSIA', 'MUSTARD']","['FUCHSIA', 'Mustard']", N/A,['MUSTARD']
+'G1064,N/A,N/A,N/A,X,['BLK'], N/A, N/A, N/A
+'G1065W,N/A,N/A,N/A,X,['BLK'], N/A, N/A, N/A
+'G1066,"['FUCHSIA', 'MUSTARD']",N/A,N/A,P,"['FUCHSIA', 'MUSTARD']","['Fuchsia', 'Mustard']", N/A, N/A
+'G1067,N/A,"['NAVY/GRN', 'PUR/GLD']",N/A,P,"['NAVY/GRN', 'PUR/GLD']", N/A,"['Navy/Grn', 'Pur/Gld']", N/A
+'G1068,N/A,"['NAVY/GRN', 'RED/BLK']",N/A,P,"['NAVY/GRN', 'RED/BLK']", N/A,"['Navy/Grn', 'Red/Blk']", N/A
+'G1069,N/A,N/A,N/A,X,"['CINNAMON/TPE', 'STEEL/SIL']", N/A, N/A, N/A
+'G1069A,N/A,N/A,N/A,X,['WHT'], N/A, N/A, N/A
+'G1070,N/A,N/A,N/A,X,"['PURPLE', 'RED']", N/A, N/A, N/A
+'G1072,N/A,N/A,N/A,X,"['A. GRN', 'WHT', 'PURPLE']", N/A, N/A, N/A
+'G1074,N/A,N/A,N/A,X,['A. GRN'], N/A, N/A, N/A
+'G1080,[''],[''],N/A,X,['WHT'],"['PURPLE', 'RED', 'WHT']","['PURPLE', 'RED', 'WHT']", N/A
+'G1081,N/A,"['BLK', 'MUSTARD GLD', 'RED']",N/A,P,"['BLK', 'MUSTARD GLD', 'RED']", N/A,"['BLK', 'M. GOLD', 'RED']", N/A
+'G1082,"['WHT/BLK/RED', 'W/B', 'WHT/LV']","['WHT/BLK/RED', 'W/B', 'WHT/LV']",N/A,X,"['W/B', 'WHT/BLK/RED', 'WHT/LV', 'WHT/YELLOW']","['WHT/BLK/RED', 'WHT/BLK', 'WHT/LV']","['W/B/RED', 'WHT/BLK', 'WHT/LAV']", N/A
+'G1083,N/A,"['LAV', 'WHT']",N/A,P,"['LAV', 'WHT']", N/A,"['LAVENDER', 'WHITE']", N/A
+'G1084,N/A,"['LEMON', 'LILAC', 'WHT']",N/A,P,"['LEMON', 'LILAC', 'WHT']", N/A,"['LEMON', 'LILAC', 'WHITE']", N/A
+'G1085,N/A,"['MINT', 'WHT']",N/A,P,"['MINT', 'WHT']", N/A,"['MINT', 'WHITE']", N/A
+'G1086,N/A,['INDIGO BLUE'],N/A,P,['INDIGO BLUE'], N/A,['I. BLUE'], N/A
+'G1086A,N/A,N/A,N/A,X,"['BLUSH PINK', 'WHT']", N/A, N/A, N/A
+'G1087,N/A,"['LAV', 'WHT']",N/A,P,"['LAV', 'WHT']", N/A,"['LAV', 'WHITE']", N/A
+'G1088,"['BLK', 'CHAM', 'NAVY', 'SIL', 'WHT']",N/A,N/A,P,"['BLK', 'NAVY', 'SIL', 'WHT', 'CHAM']","['BLK', 'CHAM', 'NAVY', 'SIL', 'WHT']", N/A, N/A
+'G1090,N/A,N/A,N/A,X,"['CRAN', 'NAVY']", N/A, N/A, N/A
+'G1092,N/A,N/A,N/A,X,['ORG'], N/A, N/A, N/A
+'G1093,N/A,N/A,N/A,X,"['PINK', 'WHT']", N/A, N/A, N/A
+'G1094,N/A,"['LILAC', 'WHT']",N/A,P,"['LILAC', 'WHT']", N/A,"['Lilac', 'White']", N/A
+'G1095,N/A,['VIOLET'],N/A,P,['VIOLET'], N/A,['Violet'], N/A
+'G1096,N/A,N/A,N/A,X,"['BLUE', 'PINK', 'YELLOW']", N/A, N/A, N/A
+'G1097,N/A,N/A,N/A,X,['PINK/GLD'], N/A, N/A, N/A
+'G1098,N/A,N/A,N/A,X,"['CHAM', 'LIME', 'YELLOW']", N/A, N/A, N/A
+'G1099,N/A,N/A,N/A,X,"['BLUSH PINK', 'LIME']", N/A, N/A, N/A
+'G1110,N/A,N/A,N/A,X,['YELLOW'], N/A, N/A, N/A
+'H0889,N/A,N/A,N/A,X,['AQUA BLUE'], N/A, N/A, N/A
+'H0907/08,N/A,[''],N/A,X,['EMERALD'], N/A,['Emerald'], N/A
+'H0912/14/15,N/A,N/A,N/A,X,"['BLUE', 'PINK', 'WHT', 'YELLOW']", N/A, N/A, N/A
+'H0929,N/A,N/A,N/A,X,"['HP', 'TURQ', 'WHT']", N/A, N/A, N/A
+'HD1339,N/A,N/A,N/A,X,['GOLD/RYL'], N/A, N/A, N/A
+'HD1341,N/A,N/A,N/A,X,['SFM MULTI'], N/A, N/A, N/A
+'HD1342,N/A,N/A,N/A,X,['WHT/ROYAL'], N/A, N/A, N/A
+'HD1343/46,N/A,N/A,N/A,X,"['NAVY', 'O.BLUE', 'SIL', 'VIOLET', 'WHT']", N/A, N/A, N/A
+'HD1347,N/A,N/A,N/A,X,['MULTI'], N/A, N/A, N/A
+'HD1349,N/A,N/A,N/A,X,['BLK/PNK'], N/A, N/A, N/A
+'HG1062,N/A,N/A,N/A,X,['MUSTARD'], N/A, N/A, N/A
+'HG1066,N/A,N/A,N/A,X,['MUSTARD'], N/A, N/A, N/A
+'HG1067/68,N/A,N/A,N/A,X,"['NAVY', 'PURPLE', 'RED']", N/A, N/A, N/A
+'HG1069,N/A,N/A,N/A,X,"['CINNAMON', 'SIL']", N/A, N/A, N/A
+'HG1081,N/A,"['BLK', 'MUSTARD GLD', 'RED']",N/A,P,"['MUSTARD GLD', 'RED']", N/A,"['BLK', 'M. GOLD', 'RED']", N/A
+'HG1094,N/A,N/A,N/A,X,"['LILAC', 'SFM', 'WHT']", N/A, N/A, N/A
+'HG1095,N/A,N/A,N/A,X,['VIOLET'], N/A, N/A, N/A
+'HG1096,N/A,N/A,N/A,X,"['BLUE', 'PINK', 'YELLOW']", N/A, N/A, N/A
+'HG1097,N/A,N/A,N/A,X,['PINK/GLD'], N/A, N/A, N/A
+'HM1020,N/A,"['BLK', 'WHT']",N/A,P,"['BLK', 'WHT']", N/A,"['BLK', 'WHT']", N/A
+'HM935,[''],N/A,N/A,X,"['BLK', 'CHOCO', 'NAVY', 'RYL', 'WHT']","['Black', 'Champ', 'Navy', 'Silver', 'White']", N/A, N/A
+'HM944,"['BLK', 'CHAM', 'WHT']",N/A,N/A,P,"['BLK', 'CHAM', 'WHT']","['Black', 'Champagne', 'Ice Blue', 'White']", N/A, N/A
+'HM948,"['', 'CHAM', 'LILAC', 'PASTEL GRN']",N/A,N/A,X,"['BLK', 'PASTEL GRN', 'WHT']","['Black', 'Champ', 'Lilac', 'Navy', 'Pastel Green', 'Pink', 'White']", N/A, N/A
+'HM957,"['PURPLE', 'RED', 'SAPPHIRE']",N/A,N/A,P,"['PURPLE', 'RED']","['Purple', 'Red', 'Sapphire', 'White']", N/A, N/A
+'HM958,"['BLUE', 'PEACOCK', 'PINK']",N/A,N/A,P,"['BLUE', 'PINK']","['Blue', 'Peacock', 'Pink']", N/A, N/A
+'HM960,"['BLK', 'BLUE', 'MAUVE', 'PINK', 'WHT']",N/A,N/A,P,"['ICE BLUE', 'PINK', 'WHT']","['Black', 'Blue', 'Mauve', 'Pink', 'White']", N/A, N/A
+'HM961,"['LAV', 'NAVY', 'YELLOW']",N/A,N/A,P,"['BLK', 'LAV', 'NAVY', 'WHT', 'YELLOW']","['Lavender', 'Navy', 'Yellow']", N/A, N/A
+'HM962,"['', 'ROSE PINK', 'ICE BLUE', 'LEMON', 'LILAC', 'MINT GRN']",N/A,N/A,P,"['ICE BLUE', 'LEMON', 'LILAC', 'MINT GRN']","['Lime Yellow', 'Rose Pink', 'White', 'ICE BLUE', 'LEMON', 'LILAC', 'MINT GRN']", N/A, N/A
+'HM965,N/A,N/A,N/A,X,"['ICE BLUE', 'NAVY', 'SIL', 'WHT']", N/A, N/A, N/A
+'HM967,N/A,N/A,N/A,X,"['BLUE', 'PINK']", N/A, N/A, N/A
+'HM968,N/A,N/A,N/A,X,"['BLK', 'NAVY', 'SIL', 'WHT']", N/A, N/A, N/A
+'HM970,N/A,N/A,N/A,X,"['CHAM', 'FUCHSIA', 'NAVY', 'RED', 'RYL', 'S. PINK', 'WHT']", N/A, N/A, N/A
+'HM971,N/A,N/A,N/A,X,"['BLK', 'PURPLE', 'RYL']", N/A, N/A, N/A
+'HR1037,"['', 'RED']",N/A,N/A,X,"['CHAM', 'NAVY', 'RED', 'SIL']","['Black', 'Champ', 'Navy', 'Red', 'Silver', 'White']", N/A, N/A
+'HR1038,"['', 'CHAMP/CHOCO', 'SIL/ST', 'W/B']",N/A,N/A,P,"['CHAMP/CHOCO', 'SIL/ST']","['Black/White', 'Cham/Choco', 'Sil/Dk. Sil', 'White/Black']", N/A, N/A
+'HR1055,N/A,N/A,N/A,X,"['CHAM', 'CHOCO', 'IVY', 'SIL']", N/A, N/A, N/A
+'HR1056,N/A,N/A,N/A,X,['CRAN'], N/A, N/A, N/A
+'P1011,N/A,N/A,N/A,X,"['PINK', 'WHT']", N/A, N/A, N/A
+'P1012,N/A,N/A,N/A,X,['RED/BLUE/YEL'], N/A, N/A, N/A
+'P1013,N/A,N/A,N/A,X,"['BLACK/WHT', 'BLK/RED', 'RAINBOW']", N/A, N/A, N/A
+'P1014,N/A,N/A,N/A,X,['DENIM'], N/A, N/A, N/A
+'P1016,N/A,N/A,N/A,X,['DENIM/ORG'], N/A, N/A, N/A
+'P27766,N/A,N/A,N/A,X,['LAV'], N/A, N/A, N/A
+'P27779,N/A,N/A,N/A,X,"['PINK', 'WHT']", N/A, N/A, N/A
+'S0301,"['BLK', 'RED']",N/A,N/A,X,"['BLK', 'WHT', 'BLACK-D']","['Black', 'Red']", N/A, N/A
+'S0710,['BLK'],N/A,N/A,X,"['BLK', 'WHT', 'WHT-B']",['Black'], N/A, N/A
+'S0711,"['BLK', 'RED']",N/A,N/A,P,['BLK'],"['Black', 'Red']", N/A, N/A
+'S0712,['BLK'],N/A,N/A,P,['BLK'],"['Black', 'Navy', 'Red', 'BLK']", N/A, N/A
+'T0015,N/A,N/A,N/A,X,['HUNTER GREEN'], N/A, N/A, N/A
+'T0076,N/A,N/A,N/A,X,['BLACK/WHT'], N/A, N/A, N/A
+'T0540,N/A,N/A,N/A,X,['IVY'], N/A, N/A, N/A
+'T0607W,N/A,N/A,N/A,X,['WHT/YELLOW'], N/A, N/A, N/A
+'T0656,N/A,N/A,N/A,X,['P YLW'], N/A, N/A, N/A
+'T0713,N/A,N/A,N/A,X,['RED'], N/A, N/A, N/A
+'T0744,N/A,N/A,N/A,X,['PALE BLUE'], N/A, N/A, N/A
+'T0748,N/A,N/A,N/A,X,['LT. BLUE'], N/A, N/A, N/A
+'T0767,N/A,N/A,N/A,X,['WHT'], N/A, N/A, N/A
+'T0768,N/A,N/A,N/A,X,['LIME'], N/A, N/A, N/A
+'T3044W,N/A,N/A,N/A,X,['PEACH'], N/A, N/A, N/A
+'T3925,N/A,N/A,N/A,X,['FUCHSIA'], N/A, N/A, N/A

@@ -1,14 +1,14 @@
 import csv
 import winfa
 
-style='0929'
+style='0910'
 newList={}
 header={}
 URL=[]
 UPC=[]
 OSM={}
 def getSKU(style):
-    ATS=winfa.getATS()
+    ATS=winfa.getATSW()
     for item in ATS:
         if style in item:
            print (item)
@@ -195,6 +195,8 @@ def getQty(num):
     return v
 
 def getURL(style,color='*',index=0):
+    if style[0]=='0':
+       style=style[1:]
     for item in URL:
         if style == item[0] and winfa.colorMatch(color,item[1])==1:
            if index==0 and '0' in item[3]: 

@@ -124,11 +124,15 @@ def getSC(item):
        result=winfa.Aloc(style,color)
        return result
 def print_Nodec():
+    fo=open('output.csv','w',newline='')
+    fieldname=['style','code']
+    writer=csv.DictWriter(fo,fieldnames=fieldname)
+    writer.writeheader()
     noDecList.sort()
     for item in noDecList:
         code=getSC(item)
         print ('NO decription:',item,code)
-
+        writer.writerow({'style':item,'code':code})
         #print (ATS_color_count,len(ATS_color_count))
         #print (web_color_count,len(web_color_count))
 
